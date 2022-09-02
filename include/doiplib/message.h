@@ -17,6 +17,8 @@ namespace DoipLib
         /// @brief DoIP message header size
         const std::size_t cHeaderSize{8};
 
+        Message() noexcept = default;
+
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param payloadType DoIP message payload type
@@ -40,6 +42,8 @@ namespace DoipLib
         /// @param[in] serializedMessage Serialize message byte array
         /// @returns True if the deserialization is successful, otherwise false
         bool TryDeserialize(const std::vector<uint8_t> &serializedMessage);
+
+        virtual ~Message() noexcept = default;
     };
 }
 

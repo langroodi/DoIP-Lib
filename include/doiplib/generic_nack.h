@@ -20,6 +20,8 @@ namespace DoipLib
          virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
          
     public:
+        GenericNack() noexcept = default;
+        
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param nackCode Negative acknowledgement code
