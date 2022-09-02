@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdoip_lib.a CMakeFiles/doip_lib.dir/src/message.cpp.o CMakeFiles/doip_lib.dir/src/generic_nack.cpp.o
+/usr/bin/ranlib libdoip_lib.a
