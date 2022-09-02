@@ -14,8 +14,8 @@ namespace DoipLib
     {
         GetPayload(serializedMessage);
 
-        std::size_t _payloadLength{serializedMessage.size()};
-        Convert::ToByteArray<std::size_t>(_payloadLength, serializedMessage);
+        auto _payloadLength{static_cast<uint32_t>(serializedMessage.size())};
+        Convert::ToByteArray<uint32_t>(_payloadLength, serializedMessage);
 
         auto _payloadTypeInt{static_cast<uint16_t>(mPayloadType)};
         Convert::ToByteArray<uint16_t>(_payloadTypeInt, serializedMessage);
@@ -35,14 +35,17 @@ namespace DoipLib
         }
 
         std::size_t _offset{0};
-        uint8_t _protocolVersion{serializedMessage.at(_offset)};
+        uint8_t _actualProtocolVersion{serializedMessage.at(_offset)};
         ++_offset;
 
         uint8_t _inverseProtocolVersion{serializedMessage.at(_offset)};
         ++_offset;
 
         // Protocol version check
-        if (_protocolVersion != ~_inverseProtocolVersion)
+        auto _expectedProtocolVersion{
+            static_cast<uint8_t>(~_inverseProtocolVersion)};
+
+        if (_actualProtocolVersion != _expectedProtocolVersion)
         {
             return false;
         }
@@ -52,7 +55,7 @@ namespace DoipLib
         auto _payloadType{static_cast<PayloadType>(_payloadTypeInt)};
 
         auto _payloadLength{
-            Convert::ToUnsignedInteger<std::size_t>(serializedMessage, _offset)};
+            Convert::ToUnsignedInteger<uint32_t>(serializedMessage, _offset)};
 
         // Payload length check
         if (_payloadLength != serializedMessage.size() - cHeaderSize)
@@ -63,7 +66,7 @@ namespace DoipLib
         bool _succeed{TrySetPayload(serializedMessage)};
         if (_succeed)
         {
-            mProtocolVersion = _protocolVersion;
+            mProtocolVersion = _actualProtocolVersion;
             mPayloadType = _payloadType;
         }
 
