@@ -40,3 +40,4 @@ jobs:
       with:
         doxygenconf: './doc/doxygen.conf'
         htmloutput: './doc/html/'
+        darkmode: true
