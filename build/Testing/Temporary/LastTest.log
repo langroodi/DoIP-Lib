@@ -1,0 +1,192 @@
+Start testing: Sep 02 19:33 UTC
+----------------------------------------------------------
+1/7 Testing: ConvertTest.ShortToByteArray
+1/7 Test: ConvertTest.ShortToByteArray
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ShortToByteArray" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ShortToByteArray" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ShortToByteArray
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ShortToByteArray
+[       OK ] ConvertTest.ShortToByteArray (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ShortToByteArray" end time: Sep 02 19:33 UTC
+"ConvertTest.ShortToByteArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: ConvertTest.IntegerToByteArray
+2/7 Test: ConvertTest.IntegerToByteArray
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.IntegerToByteArray" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.IntegerToByteArray" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.IntegerToByteArray
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.IntegerToByteArray
+[       OK ] ConvertTest.IntegerToByteArray (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.IntegerToByteArray" end time: Sep 02 19:33 UTC
+"ConvertTest.IntegerToByteArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: ConvertTest.ByteArrayToShort
+3/7 Test: ConvertTest.ByteArrayToShort
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteArrayToShort" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteArrayToShort" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteArrayToShort
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteArrayToShort
+[       OK ] ConvertTest.ByteArrayToShort (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteArrayToShort" end time: Sep 02 19:33 UTC
+"ConvertTest.ByteArrayToShort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: ConvertTest.ByteArrayToInteger
+4/7 Test: ConvertTest.ByteArrayToInteger
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteArrayToInteger" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteArrayToInteger" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteArrayToInteger
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteArrayToInteger
+[       OK ] ConvertTest.ByteArrayToInteger (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteArrayToInteger" end time: Sep 02 19:33 UTC
+"ConvertTest.ByteArrayToInteger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: GenericNackTest.NackCodeProperty
+5/7 Test: GenericNackTest.NackCodeProperty
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.NackCodeProperty" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.NackCodeProperty" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.NackCodeProperty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.NackCodeProperty
+[       OK ] GenericNackTest.NackCodeProperty (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.NackCodeProperty" end time: Sep 02 19:33 UTC
+"GenericNackTest.NackCodeProperty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: GenericNackTest.Serialization
+6/7 Test: GenericNackTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.Serialization" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.Serialization
+[       OK ] GenericNackTest.Serialization (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.Serialization" end time: Sep 02 19:33 UTC
+"GenericNackTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: GenericNackTest.Deserialization
+7/7 Test: GenericNackTest.Deserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.Deserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.Deserialization" start time: Sep 02 19:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.Deserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.Deserialization
+[       OK ] GenericNackTest.Deserialization (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.Deserialization" end time: Sep 02 19:33 UTC
+"GenericNackTest.Deserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 02 19:33 UTC
