@@ -9,8 +9,7 @@ namespace DoipLib
     class VehicleIdRequest : public Message
     {
     private:
-        static const PayloadType cPayloadType{
-            PayloadType::VehicleIdRequest};
+        static const PayloadType cPayloadType{PayloadType::VehicleIdRequest};
 
     protected:
          void GetPayload(std::vector<uint8_t> &payload) override;
@@ -22,7 +21,7 @@ namespace DoipLib
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        VehicleIdRequest(uint16_t protocolVersion) noexcept;
+        explicit VehicleIdRequest(uint16_t protocolVersion) noexcept;
     };
 }
 

@@ -19,7 +19,7 @@ namespace DoipLib
 
         /// @brief Constructor
         /// @param payloadType DoIP message payload type
-        Message(PayloadType payloadType) noexcept;
+        explicit Message(PayloadType payloadType) noexcept;
 
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
