@@ -48,6 +48,7 @@ add_library(
   doip_lib
   ${source_dir}/message.cpp
   ${source_dir}/generic_nack.cpp
+  ${source_dir}/vehicle_id_request.cpp
 )
 
 target_include_directories(doip_lib
@@ -62,6 +63,7 @@ if(build_tests)
     ${test_dir}/convert_test.cpp
     ${test_dir}/message_test.cpp
     ${test_dir}/generic_nack_test.cpp
+    ${test_dir}/vehicle_id_request_test.cpp
   )
 
   target_link_libraries(
