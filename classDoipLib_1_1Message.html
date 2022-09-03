@@ -94,8 +94,9 @@ $(document).ready(function(){initNavTree('classDoipLib_1_1Message.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classDoipLib_1_1Message-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DoipLib::Message Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -124,6 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac25b88c5012a603aff30988be1c35861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to deserialize DoIP message.  <a href="classDoipLib_1_1Message.html#ac25b88c5012a603aff30988be1c35861">More...</a><br /></td></tr>
 <tr class="separator:ac25b88c5012a603aff30988be1c35861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afae51e744141f5ce8ea50f2d9f920498"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1Message.html#afae51e744141f5ce8ea50f2d9f920498">TryExtractPayloadType</a> (const std::vector&lt; uint8_t &gt; &amp;serializedMessage, PayloadType &amp;payloadType)</td></tr>
+<tr class="memdesc:afae51e744141f5ce8ea50f2d9f920498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to extract the payload type from the given serialized message.  <a href="classDoipLib_1_1Message.html#afae51e744141f5ce8ea50f2d9f920498">More...</a><br /></td></tr>
+<tr class="separator:afae51e744141f5ce8ea50f2d9f920498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a726baafe7170a4f2c3fc193747bf781a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1Message.html#a726baafe7170a4f2c3fc193747bf781a">Message</a> (uint8_t protocolVersion, PayloadType payloadType) noexcept</td></tr>
@@ -136,10 +143,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a878d4ab44afedb6b60e5e06baeefe7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to set message payload.  <a href="classDoipLib_1_1Message.html#a878d4ab44afedb6b60e5e06baeefe7a3">More...</a><br /></td></tr>
 <tr class="separator:a878d4ab44afedb6b60e5e06baeefe7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
 <tr class="memitem:aa1c03278884b885a7ceb7da1c67b4e1a"><td class="memItemLeft" align="right" valign="top"><a id="aa1c03278884b885a7ceb7da1c67b4e1a" name="aa1c03278884b885a7ceb7da1c67b4e1a"></a>
-const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cHeaderSize</b> {8}</td></tr>
+static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cHeaderSize</b> {8}</td></tr>
 <tr class="memdesc:aa1c03278884b885a7ceb7da1c67b4e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DoIP message header size. <br /></td></tr>
 <tr class="separator:aa1c03278884b885a7ceb7da1c67b4e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -278,6 +285,52 @@ const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cHeaderS
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the deserialization is successful, otherwise false </dd></dl>
+
+</div>
+</div>
+<a id="afae51e744141f5ce8ea50f2d9f920498" name="afae51e744141f5ce8ea50f2d9f920498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae51e744141f5ce8ea50f2d9f920498">&#9670;&nbsp;</a></span>TryExtractPayloadType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool DoipLib::Message::TryExtractPayloadType </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializedMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PayloadType &amp;&#160;</td>
+          <td class="paramname"><em>payloadType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Try to extract the payload type from the given serialized message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializedMessage</td><td>Serialized message byte array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">payloadType</td><td>Extracted payload type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the payload type is extracted successfully, otherwise false </dd></dl>
 
 </div>
 </div>
