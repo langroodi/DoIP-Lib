@@ -30,8 +30,10 @@ namespace DoipLib
 
         /// @brief Try to set message payload
         /// @param[in] payload Payload byte array
+        /// @param[in] payloadType Payload type for sanity check
         /// @returns True if the payload is set successfully, otherwise false
-        virtual bool TrySetPayload(const std::vector<uint8_t> &payload) = 0;
+        virtual bool TrySetPayload(
+            const std::vector<uint8_t> &payload, PayloadType payloadType) = 0;
 
     public:
         /// @brief Serialize DoIP message

@@ -65,7 +65,7 @@ namespace DoipLib
             return false;
         }
 
-        bool _succeed{TrySetPayload(serializedMessage)};
+        bool _succeed{TrySetPayload(serializedMessage, _payloadType)};
         if (_succeed)
         {
             mProtocolVersion = _actualProtocolVersion;

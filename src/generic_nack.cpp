@@ -17,11 +17,12 @@ namespace DoipLib
         payload.insert(payload.begin(), _nackCodeByte);
     }
 
-    bool GenericNack::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool GenericNack::TrySetPayload(
+        const std::vector<uint8_t> &payload, PayloadType payloadType)
     {
         const std::size_t cNackCodeIndex{cHeaderSize};
 
-        if (payload.size() > cNackCodeIndex)
+        if (payloadType == cPayloadType && payload.size() > cNackCodeIndex)
         {
             uint8_t _nackCodeByte{payload.at(cNackCodeIndex)};
             mNackCode = static_cast<NackType>(_nackCodeByte);
