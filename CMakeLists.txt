@@ -60,6 +60,7 @@ if(build_tests)
   add_executable(
     doip_lib_test
     ${test_dir}/convert_test.cpp
+    ${test_dir}/message_test.cpp
     ${test_dir}/generic_nack_test.cpp
   )
 

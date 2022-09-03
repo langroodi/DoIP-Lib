@@ -3,6 +3,8 @@
 
 namespace DoipLib
 {
+    const std::size_t Message::cHeaderSize;
+
     Message::Message(
         uint8_t protocolVersion,
         PayloadType payloadType) noexcept : mProtocolVersion{protocolVersion},
@@ -71,5 +73,26 @@ namespace DoipLib
         }
 
         return _succeed;
+    }
+
+    bool Message::TryExtractPayloadType(
+        const std::vector<uint8_t> &serializedMessage,
+        PayloadType &payloadType)
+    {
+        if (serializedMessage.size() >= cHeaderSize)
+        {
+            std::size_t cPayloadOffset{2};
+
+            auto _payloadTypeInt{
+                Convert::ToUnsignedInteger<uint16_t>(
+                    serializedMessage, cPayloadOffset)};
+            payloadType = static_cast<PayloadType>(_payloadTypeInt);
+
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
