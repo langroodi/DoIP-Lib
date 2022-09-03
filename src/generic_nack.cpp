@@ -4,6 +4,10 @@ namespace DoipLib
 {
     const PayloadType GenericNack::cPayloadType;
 
+    GenericNack::GenericNack() noexcept : Message(cPayloadType)
+    {
+    }
+
     GenericNack::GenericNack(
         uint16_t protocolVersion,
         NackType nackCode) noexcept : Message(protocolVersion, cPayloadType),
@@ -17,12 +21,11 @@ namespace DoipLib
         payload.insert(payload.begin(), _nackCodeByte);
     }
 
-    bool GenericNack::TrySetPayload(
-        const std::vector<uint8_t> &payload, PayloadType payloadType)
+    bool GenericNack::TrySetPayload(const std::vector<uint8_t> &payload)
     {
         const std::size_t cNackCodeIndex{cHeaderSize};
 
-        if (payloadType == cPayloadType && payload.size() > cNackCodeIndex)
+        if (payload.size() > cNackCodeIndex)
         {
             uint8_t _nackCodeByte{payload.at(cNackCodeIndex)};
             mNackCode = static_cast<NackType>(_nackCodeByte);

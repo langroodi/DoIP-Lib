@@ -4,6 +4,11 @@ namespace DoipLib
 {
     const PayloadType VehicleIdRequest::cPayloadType;
 
+    VehicleIdRequest::VehicleIdRequest() noexcept : Message(cPayloadType)
+    {
+    }
+
+
     VehicleIdRequest::VehicleIdRequest(
         uint16_t protocolVersion) noexcept : Message(protocolVersion, cPayloadType)
     {
@@ -14,10 +19,9 @@ namespace DoipLib
         // The message contain no payload.
     }
 
-    bool VehicleIdRequest::TrySetPayload(
-        const std::vector<uint8_t> &payload, PayloadType payloadType)
+    bool VehicleIdRequest::TrySetPayload(const std::vector<uint8_t> &payload)
     {
         // The message contain no payload.
-        return (payloadType == cPayloadType);
+        return true;
     }
 }

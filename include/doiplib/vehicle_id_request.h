@@ -15,11 +15,10 @@ namespace DoipLib
     protected:
          void GetPayload(std::vector<uint8_t> &payload) override;
 
-         virtual bool TrySetPayload(
-            const std::vector<uint8_t> &payload, PayloadType payloadType) override;
+         virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
          
     public:
-        VehicleIdRequest() noexcept = default;
+        VehicleIdRequest() noexcept;
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version

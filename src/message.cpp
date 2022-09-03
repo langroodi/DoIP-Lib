@@ -5,6 +5,10 @@ namespace DoipLib
 {
     const std::size_t Message::cHeaderSize;
 
+    Message::Message(PayloadType payloadType) noexcept : mPayloadType{payloadType}
+    {
+    }
+
     Message::Message(
         uint8_t protocolVersion,
         PayloadType payloadType) noexcept : mProtocolVersion{protocolVersion},
@@ -56,6 +60,12 @@ namespace DoipLib
             Convert::ToUnsignedInteger<uint16_t>(serializedMessage, _offset)};
         auto _payloadType{static_cast<PayloadType>(_payloadTypeInt)};
 
+        // Payload type check
+        if (_payloadType != mPayloadType)
+        {
+            return false;
+        }
+
         auto _payloadLength{
             Convert::ToUnsignedInteger<uint32_t>(serializedMessage, _offset)};
 
@@ -65,11 +75,10 @@ namespace DoipLib
             return false;
         }
 
-        bool _succeed{TrySetPayload(serializedMessage, _payloadType)};
+        bool _succeed{TrySetPayload(serializedMessage)};
         if (_succeed)
         {
             mProtocolVersion = _actualProtocolVersion;
-            mPayloadType = _payloadType;
         }
 
         return _succeed;
