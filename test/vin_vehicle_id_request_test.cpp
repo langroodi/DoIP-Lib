@@ -55,7 +55,7 @@ namespace DoipLib
     TEST(VinVehicleIdRequestTest, InvalidDeserialization)
     {
         const std::vector<uint8_t> cSerializedMessage{
-            0x02, 0xfd, 0x00, 0x03, 0x00, 0x00, 0x00, 0x11};
+            0x02, 0xfd, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00};
 
         VinVehicleIdRequest _message;
         bool _succeed{_message.TryDeserialize(cSerializedMessage)};
