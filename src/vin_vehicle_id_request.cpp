@@ -1,4 +1,5 @@
 #include <stdexcept>
+#include <utility>
 #include "doiplib/vin_vehicle_id_request.h"
 
 namespace DoipLib
@@ -16,6 +17,12 @@ namespace DoipLib
     {
     }
 
+    VinVehicleIdRequest::VinVehicleIdRequest(
+        uint16_t protocolVersion, std::string &&vin) : Message(protocolVersion, cPayloadType),
+                                                       mVin{vin.size() == cVinSize ? std::move(vin) : throw std::out_of_range("Invalid vehicle ID number")}
+    {
+    }
+
     void VinVehicleIdRequest::GetPayload(std::vector<uint8_t> &payload)
     {
         payload = std::vector<uint8_t>(mVin.cbegin(), mVin.cend());
@@ -30,7 +37,7 @@ namespace DoipLib
         {
             auto _beginItr{payload.cbegin() + cHeaderSize};
 
-            mVin = std::string(_beginItr, payload.end());
+            mVin = std::string(_beginItr, payload.cend());
 
             return true;
         }
