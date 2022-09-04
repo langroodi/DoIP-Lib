@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22b1908e9ce593d71a4cff999d97eff2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1VinVehicleIdRequest.html#a22b1908e9ce593d71a4cff999d97eff2">VinVehicleIdRequest</a> (uint16_t protocolVersion, std::string vin)</td></tr>
 <tr class="memdesc:a22b1908e9ce593d71a4cff999d97eff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classDoipLib_1_1VinVehicleIdRequest.html#a22b1908e9ce593d71a4cff999d97eff2">More...</a><br /></td></tr>
 <tr class="separator:a22b1908e9ce593d71a4cff999d97eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae224a53750793237967983180467f5a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1VinVehicleIdRequest.html#ae224a53750793237967983180467f5a3">VinVehicleIdRequest</a> (uint16_t protocolVersion, std::string &amp;&amp;vin)</td></tr>
+<tr class="memdesc:ae224a53750793237967983180467f5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classDoipLib_1_1VinVehicleIdRequest.html#ae224a53750793237967983180467f5a3">More...</a><br /></td></tr>
+<tr class="separator:ae224a53750793237967983180467f5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe6ddbc976fda04672b48cc2ced80df8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1VinVehicleIdRequest.html#afe6ddbc976fda04672b48cc2ced80df8">GetVin</a> () const</td></tr>
 <tr class="memdesc:afe6ddbc976fda04672b48cc2ced80df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get VIN filter.  <a href="classDoipLib_1_1VinVehicleIdRequest.html#afe6ddbc976fda04672b48cc2ced80df8">More...</a><br /></td></tr>
 <tr class="separator:afe6ddbc976fda04672b48cc2ced80df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +165,7 @@ static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c
 <div class="textblock"><p >Vehicle ID request DoIP message with vehicle ID number filtering. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22b1908e9ce593d71a4cff999d97eff2" name="a22b1908e9ce593d71a4cff999d97eff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22b1908e9ce593d71a4cff999d97eff2">&#9670;&nbsp;</a></span>VinVehicleIdRequest()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b1908e9ce593d71a4cff999d97eff2">&#9670;&nbsp;</a></span>VinVehicleIdRequest() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +180,49 @@ static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>vin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocolVersion</td><td>DoIP ISO protocol version </td></tr>
+    <tr><td class="paramname">vin</td><td>Vehicle ID number filter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>Throws if the given VIN is invalid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae224a53750793237967983180467f5a3" name="ae224a53750793237967983180467f5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae224a53750793237967983180467f5a3">&#9670;&nbsp;</a></span>VinVehicleIdRequest() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoipLib::VinVehicleIdRequest::VinVehicleIdRequest </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>protocolVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&amp;&#160;</td>
           <td class="paramname"><em>vin</em>&#160;</td>
         </tr>
         <tr>

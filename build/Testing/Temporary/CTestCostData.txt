@@ -1,0 +1,25 @@
+ConvertTest.ShortToByteArray 1 0.00196561
+ConvertTest.IntegerToByteArray 1 0.0018437
+ConvertTest.ByteArrayToShort 1 0.00176301
+ConvertTest.ByteArrayToInteger 1 0.00193501
+MessageTest.Serialization 1 0.00176201
+MessageTest.ValidDeserialization 1 0.00220061
+MessageTest.InvalidHeaderDeserialization 1 0.0018001
+MessageTest.InvalidVersionDeserialization 1 0.00174841
+MessageTest.InvalidTypeDeserialization 1 0.00176431
+MessageTest.InvalidLengthDeserialization 1 0.00174671
+MessageTest.ValidPayloadTypeExtraction 1 0.0017855
+MessageTest.InvalidPayloadTypeExtraction 1 0.001741
+GenericNackTest.NackCodeProperty 1 0.00174741
+GenericNackTest.Serialization 1 0.0017538
+GenericNackTest.ValidDeserialization 1 0.0017377
+GenericNackTest.InvalidDeserialization 1 0.00174261
+VehicleIdRequestTest.ValidDeserialization 1 0.0017373
+EidVehicleIdRequestTest.Serialization 1 0.00539962
+EidVehicleIdRequestTest.ValidDeserialization 1 0.00202521
+EidVehicleIdRequestTest.InvalidDeserialization 1 0.00232841
+VinVehicleIdRequestTest.Constructor 1 0.00223461
+VinVehicleIdRequestTest.Serialization 1 0.00205651
+VinVehicleIdRequestTest.ValidDeserialization 1 0.00211891
+VinVehicleIdRequestTest.InvalidDeserialization 1 0.00205411
+---
