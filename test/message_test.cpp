@@ -6,7 +6,94 @@
 
 namespace DoipLib
 {
-    TEST(MessageTest, ValidPayloadTypeExtraction)
+    class MessageTest : public Message, public testing::Test
+    {
+    private:
+        static const uint8_t cProtocolVersion{0x02};
+        static const PayloadType cPayloadType{PayloadType::VehicleIdRequest};
+
+    protected:
+        void GetPayload(std::vector<uint8_t> &payload) override
+        {
+        }
+
+        virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override
+        {
+            return true;
+        }
+
+    public:
+        MessageTest() noexcept : Message(cProtocolVersion, cPayloadType)
+        {
+        }
+    };
+
+    const uint8_t MessageTest::cProtocolVersion;
+    const PayloadType MessageTest::cPayloadType;
+
+    TEST_F(MessageTest, Serialization)
+    {
+        const std::size_t cPayloadLength{8};
+        const std::array<uint8_t, cPayloadLength> cExpectedResult{
+            0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00};
+
+        std::vector<uint8_t> _actualResult;
+        Serialize(_actualResult);
+
+        bool _areEqual =
+            std::equal(
+                std::cbegin(cExpectedResult),
+                std::cend(cExpectedResult),
+                std::cbegin(_actualResult));
+        EXPECT_TRUE(_areEqual);
+    }
+
+    TEST_F(MessageTest, ValidDeserialization)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00};
+
+        bool _succeed{TryDeserialize(cSerializedMessage)};
+        EXPECT_TRUE(_succeed);
+    }
+
+    TEST_F(MessageTest, InvalidHeaderDeserialization)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00};
+
+        bool _succeed{TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST_F(MessageTest, InvalidVersionDeserialization)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xff, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00};
+
+        bool _succeed{TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST_F(MessageTest, InvalidTypeDeserialization)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+        bool _succeed{TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST_F(MessageTest, InvalidLengthDeserialization)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x02, 0x00, 0x00, 0x00, 0x01};
+
+        bool _succeed{TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST_F(MessageTest, ValidPayloadTypeExtraction)
     {
         const PayloadType cExpectedResult{PayloadType::VehicleIdRequest};
         const std::vector<uint8_t> cSerializedMessage{
@@ -20,7 +107,7 @@ namespace DoipLib
         EXPECT_EQ(cExpectedResult, _actualResult);
     }
 
-    TEST(MessageTest, InvalidPayloadTypeExtraction)
+    TEST_F(MessageTest, InvalidPayloadTypeExtraction)
     {
         const PayloadType cExpectedResult{PayloadType::VehicleIdRequest};
         const std::vector<uint8_t> cSerializedMessage{
