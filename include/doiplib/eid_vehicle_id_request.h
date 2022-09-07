@@ -2,7 +2,6 @@
 #define EID_VEHICLE_ID_REQUEST_H
 
 #include <array>
-#include <initializer_list>
 #include "./message.h"
 
 namespace DoipLib

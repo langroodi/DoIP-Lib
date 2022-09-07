@@ -1,6 +1,7 @@
 #include <stdexcept>
 #include <utility>
 #include "doiplib/vin_vehicle_id_request.h"
+#include "doiplib/convert.h"
 
 namespace DoipLib
 {
@@ -35,9 +36,8 @@ namespace DoipLib
 
         if (payload.size() == cExpectedSize)
         {
-            auto _beginItr{payload.cbegin() + cHeaderSize};
-
-            mVin = std::string(_beginItr, payload.cend());
+            std::size_t _offset{cHeaderSize};
+            mVin = Convert::ToString<cVinSize>(payload, _offset);
 
             return true;
         }

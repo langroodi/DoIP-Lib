@@ -1,11 +1,11 @@
-#include <algorithm>
 #include <utility>
 #include "doiplib/eid_vehicle_id_request.h"
+#include "doiplib/convert.h"
 
 namespace DoipLib
 {
     const PayloadType EidVehicleIdRequest::cPayloadType;
-    const std::size_t EidVehicleIdRequest::cEidSize;
+    constexpr std::size_t EidVehicleIdRequest::cEidSize;
 
     EidVehicleIdRequest::EidVehicleIdRequest() noexcept : Message(cPayloadType)
     {
@@ -37,8 +37,8 @@ namespace DoipLib
 
         if (payload.size() == cExpectedSize)
         {
-            auto _beginItr{payload.cbegin() + cHeaderSize};
-            std::copy_n(_beginItr, cEidSize, mEid.begin());
+            std::size_t _offset{cHeaderSize};
+            mEid = Convert::ToByteArray<cEidSize>(payload, _offset);
 
             return true;
         }

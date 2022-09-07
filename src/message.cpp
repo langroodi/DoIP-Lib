@@ -21,10 +21,10 @@ namespace DoipLib
         GetPayload(serializedMessage);
 
         auto _payloadLength{static_cast<uint32_t>(serializedMessage.size())};
-        Convert::ToByteArray<uint32_t>(_payloadLength, serializedMessage);
+        Convert::ToByteVector<uint32_t>(_payloadLength, serializedMessage);
 
         auto _payloadTypeInt{static_cast<uint16_t>(mPayloadType)};
-        Convert::ToByteArray<uint16_t>(_payloadTypeInt, serializedMessage);
+        Convert::ToByteVector<uint16_t>(_payloadTypeInt, serializedMessage);
 
         auto _inverseProtocolVersion{static_cast<uint8_t>(~mProtocolVersion)};
         serializedMessage.insert(serializedMessage.begin(), _inverseProtocolVersion);
