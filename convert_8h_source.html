@@ -98,52 +98,79 @@ $(document).ready(function(){initNavTree('convert_8h_source.html',''); initResiz
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONVERT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONVERT_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>DoipLib</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html">   10</a></span>    <span class="keyword">namespace </span>Convert</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">static</span> <span class="keyword">const</span> std::size_t cByteOffset{8};</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">static</span> <span class="keyword">const</span> uint8_t cByteMask{0xff};</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca">   20</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca">ToByteArray</a>(T unsignedInteger, std::vector&lt;uint8_t&gt; &amp;byteArray)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keyword">const</span> std::size_t cUnsignedIntegerSize{<span class="keyword">sizeof</span>(T)};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; cUnsignedIntegerSize; ++i)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keyword">auto</span> _byte{<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(unsignedInteger &amp; cByteMask)};</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                byteArray.insert(byteArray.begin(), _byte);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                unsignedInteger &gt;&gt;= cByteOffset;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af">   38</a></span>        T <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af">ToUnsignedInteger</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;byteArray, std::size_t &amp;offset = 0)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">const</span> std::size_t cUnsignedIntegerSize{<span class="keyword">sizeof</span>(T)};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">auto</span> _offsetUpperBound{<span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(offset + cUnsignedIntegerSize)};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            T _result{byteArray.at(offset)};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">for</span> (++offset; offset &lt; _offsetUpperBound; ++offset)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                _result &lt;&lt;= cByteOffset;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                _result += byteArray.at(offset);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> _result;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_a3edf8f85c426f5a8bdc7fdd74cd58aca"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca">DoipLib::Convert::ToByteArray</a></div><div class="ttdeci">void ToByteArray(T unsignedInteger, std::vector&lt; uint8_t &gt; &amp;byteArray)</div><div class="ttdoc">Convert the given unsigned integer to a byte array.</div><div class="ttdef"><b>Definition:</b> convert.h:20</div></div>
-<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_a7a810e8f6bfdb7751c712ae161d276af"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af">DoipLib::Convert::ToUnsignedInteger</a></div><div class="ttdeci">T ToUnsignedInteger(const std::vector&lt; uint8_t &gt; &amp;byteArray, std::size_t &amp;offset=0)</div><div class="ttdoc">Convert the given byte array to an unsigned integer.</div><div class="ttdef"><b>Definition:</b> convert.h:38</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>DoipLib</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html">   13</a></span>    <span class="keyword">namespace </span>Convert</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">static</span> <span class="keyword">const</span> std::size_t cByteOffset{8};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">static</span> <span class="keyword">const</span> uint8_t cByteMask{0xff};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8">   23</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8">ToByteVector</a>(T unsignedInteger, std::vector&lt;uint8_t&gt; &amp;vector)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">const</span> std::size_t cUnsignedIntegerSize{<span class="keyword">sizeof</span>(T)};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; cUnsignedIntegerSize; ++i)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keyword">auto</span> _byte{<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(unsignedInteger &amp; cByteMask)};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                vector.insert(vector.begin(), _byte);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                unsignedInteger &gt;&gt;= cByteOffset;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c">   41</a></span>        T <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c">ToUnsignedInteger</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;vector, std::size_t &amp;offset = 0)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">const</span> std::size_t cUnsignedIntegerSize{<span class="keyword">sizeof</span>(T)};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">auto</span> _offsetUpperBound{<span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(offset + cUnsignedIntegerSize)};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            T _result{vector.at(offset)};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">for</span> (++offset; offset &lt; _offsetUpperBound; ++offset)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                _result &lt;&lt;= cByteOffset;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                _result += vector.at(offset);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">return</span> _result;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">   64</a></span>        std::array&lt;uint8_t, N&gt; <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">ToByteArray</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;vector, std::size_t &amp;offset = 0)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">auto</span> _beginItr = vector.cbegin() + offset;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            std::array&lt;uint8_t, N&gt; _result;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            std::copy_n(_beginItr, N, _result.begin());</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            offset += N;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">return</span> _result;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5">   80</a></span>        std::string <a class="code hl_function" href="namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5">ToString</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;vector, std::size_t &amp;offset = 0)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keyword">auto</span> _beginItr{vector.cbegin() + offset};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            offset += N;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keyword">auto</span> _endItr{vector.cbegin() + offset};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            std::string _result(_beginItr, _endItr);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">return</span> _result;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_a159f43d8df2cfc860c2991add44595b8"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8">DoipLib::Convert::ToByteVector</a></div><div class="ttdeci">void ToByteVector(T unsignedInteger, std::vector&lt; uint8_t &gt; &amp;vector)</div><div class="ttdoc">Convert the given unsigned integer to a byte vector.</div><div class="ttdef"><b>Definition:</b> convert.h:23</div></div>
+<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_a9b6a30ef2e2b75a96a97584143283b61"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">DoipLib::Convert::ToByteArray</a></div><div class="ttdeci">std::array&lt; uint8_t, N &gt; ToByteArray(const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</div><div class="ttdoc">Convert the given byte vector to a byte array.</div><div class="ttdef"><b>Definition:</b> convert.h:64</div></div>
+<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_ac4b430c689be668b3ee2f970feb1d26c"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c">DoipLib::Convert::ToUnsignedInteger</a></div><div class="ttdeci">T ToUnsignedInteger(const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</div><div class="ttdoc">Convert the given byte vector to an unsigned integer.</div><div class="ttdef"><b>Definition:</b> convert.h:41</div></div>
+<div class="ttc" id="anamespaceDoipLib_1_1Convert_html_ac613a95fe99d74b90a7f0084777613c5"><div class="ttname"><a href="namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5">DoipLib::Convert::ToString</a></div><div class="ttdeci">std::string ToString(const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</div><div class="ttdoc">Convert the given byte vector to a string.</div><div class="ttdef"><b>Definition:</b> convert.h:80</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

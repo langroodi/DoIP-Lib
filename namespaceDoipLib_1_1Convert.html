@@ -98,81 +98,44 @@ $(document).ready(function(){initNavTree('namespaceDoipLib_1_1Convert.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Helper functions namespace for unsinged integers to byte arrays conversion and vice versa.  
+<p>Helper functions namespace for conversion from/to byte vector.  
 <a href="namespaceDoipLib_1_1Convert.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3edf8f85c426f5a8bdc7fdd74cd58aca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3edf8f85c426f5a8bdc7fdd74cd58aca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca">ToByteArray</a> (T unsignedInteger, std::vector&lt; uint8_t &gt; &amp;byteArray)</td></tr>
-<tr class="memdesc:a3edf8f85c426f5a8bdc7fdd74cd58aca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for unsinged integers to byte arrays conversion and vice versa.">Convert</a> the given unsigned integer to a byte array.  <a href="namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca">More...</a><br /></td></tr>
-<tr class="separator:a3edf8f85c426f5a8bdc7fdd74cd58aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a810e8f6bfdb7751c712ae161d276af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7a810e8f6bfdb7751c712ae161d276af"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af">ToUnsignedInteger</a> (const std::vector&lt; uint8_t &gt; &amp;byteArray, std::size_t &amp;offset=0)</td></tr>
-<tr class="memdesc:a7a810e8f6bfdb7751c712ae161d276af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for unsinged integers to byte arrays conversion and vice versa.">Convert</a> the given byte array to an unsigned integer.  <a href="namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af">More...</a><br /></td></tr>
-<tr class="separator:a7a810e8f6bfdb7751c712ae161d276af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159f43d8df2cfc860c2991add44595b8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a159f43d8df2cfc860c2991add44595b8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8">ToByteVector</a> (T unsignedInteger, std::vector&lt; uint8_t &gt; &amp;vector)</td></tr>
+<tr class="memdesc:a159f43d8df2cfc860c2991add44595b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given unsigned integer to a byte vector.  <a href="namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8">More...</a><br /></td></tr>
+<tr class="separator:a159f43d8df2cfc860c2991add44595b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b430c689be668b3ee2f970feb1d26c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac4b430c689be668b3ee2f970feb1d26c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c">ToUnsignedInteger</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</td></tr>
+<tr class="memdesc:ac4b430c689be668b3ee2f970feb1d26c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to an unsigned integer.  <a href="namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c">More...</a><br /></td></tr>
+<tr class="separator:ac4b430c689be668b3ee2f970feb1d26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6a30ef2e2b75a96a97584143283b61"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a9b6a30ef2e2b75a96a97584143283b61"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; uint8_t, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">ToByteArray</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</td></tr>
+<tr class="memdesc:a9b6a30ef2e2b75a96a97584143283b61"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to a byte array.  <a href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">More...</a><br /></td></tr>
+<tr class="separator:a9b6a30ef2e2b75a96a97584143283b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac613a95fe99d74b90a7f0084777613c5"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:ac613a95fe99d74b90a7f0084777613c5"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5">ToString</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</td></tr>
+<tr class="memdesc:ac613a95fe99d74b90a7f0084777613c5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to a string.  <a href="namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5">More...</a><br /></td></tr>
+<tr class="separator:ac613a95fe99d74b90a7f0084777613c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Helper functions namespace for unsinged integers to byte arrays conversion and vice versa. </p>
+<div class="textblock"><p >Helper functions namespace for conversion from/to byte vector. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3edf8f85c426f5a8bdc7fdd74cd58aca" name="a3edf8f85c426f5a8bdc7fdd74cd58aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3edf8f85c426f5a8bdc7fdd74cd58aca">&#9670;&nbsp;</a></span>ToByteArray()</h2>
+<a id="a9b6a30ef2e2b75a96a97584143283b61" name="a9b6a30ef2e2b75a96a97584143283b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6a30ef2e2b75a96a97584143283b61">&#9670;&nbsp;</a></span>ToByteArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;std::size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void DoipLib::Convert::ToByteArray </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>unsignedInteger</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>byteArray</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for unsinged integers to byte arrays conversion and vice versa.">Convert</a> the given unsigned integer to a byte array. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Unsigned integer type </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">unsignedInteger</td><td>Unsigned integer to be converted </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">byteArray</td><td>Byte array as the unsigned integer conversion result </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7a810e8f6bfdb7751c712ae161d276af" name="a7a810e8f6bfdb7751c712ae161d276af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a810e8f6bfdb7751c712ae161d276af">&#9670;&nbsp;</a></span>ToUnsignedInteger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T DoipLib::Convert::ToUnsignedInteger </td>
+          <td class="memname">std::array&lt; uint8_t, N &gt; DoipLib::Convert::ToByteArray </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>byteArray</em>, </td>
+          <td class="paramname"><em>vector</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -188,7 +151,53 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for unsinged integers to byte arrays conversion and vice versa.">Convert</a> the given byte array to an unsigned integer. </p>
+<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to a byte array. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>Byte array size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">vector</td><td>Byte vector to be converted </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>Offset within the byte vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Byte array as the byte vector conversion result </dd></dl>
+
+</div>
+</div>
+<a id="a159f43d8df2cfc860c2991add44595b8" name="a159f43d8df2cfc860c2991add44595b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159f43d8df2cfc860c2991add44595b8">&#9670;&nbsp;</a></span>ToByteVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoipLib::Convert::ToByteVector </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>unsignedInteger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given unsigned integer to a byte vector. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Unsigned integer type </td></tr>
@@ -197,12 +206,103 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">byteArray</td><td>Byte array to be converted </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>Offset within byte array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unsignedInteger</td><td>Unsigned integer to be converted </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vector</td><td>Byte vector as the unsigned integer conversion result </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Unsigned integer as the byte array conversion result </dd></dl>
+
+</div>
+</div>
+<a id="ac613a95fe99d74b90a7f0084777613c5" name="ac613a95fe99d74b90a7f0084777613c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac613a95fe99d74b90a7f0084777613c5">&#9670;&nbsp;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoipLib::Convert::ToString </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to a string. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>String size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">vector</td><td>Byte vector to be converted </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>Offset within the byte vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String as the byte vector conversion result </dd></dl>
+
+</div>
+</div>
+<a id="ac4b430c689be668b3ee2f970feb1d26c" name="ac4b430c689be668b3ee2f970feb1d26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b430c689be668b3ee2f970feb1d26c">&#9670;&nbsp;</a></span>ToUnsignedInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T DoipLib::Convert::ToUnsignedInteger </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to an unsigned integer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Unsigned integer type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">vector</td><td>Byte vector to be converted </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>Offset within the byte vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Unsigned integer as the byte vector conversion result </dd></dl>
 
 </div>
 </div>

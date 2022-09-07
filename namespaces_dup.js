@@ -2,8 +2,10 @@ var namespaces_dup =
 [
     [ "DoipLib", null, [
       [ "Convert", "namespaceDoipLib_1_1Convert.html", [
-        [ "ToByteArray", "namespaceDoipLib_1_1Convert.html#a3edf8f85c426f5a8bdc7fdd74cd58aca", null ],
-        [ "ToUnsignedInteger", "namespaceDoipLib_1_1Convert.html#a7a810e8f6bfdb7751c712ae161d276af", null ]
+        [ "ToByteArray", "namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61", null ],
+        [ "ToByteVector", "namespaceDoipLib_1_1Convert.html#a159f43d8df2cfc860c2991add44595b8", null ],
+        [ "ToString", "namespaceDoipLib_1_1Convert.html#ac613a95fe99d74b90a7f0084777613c5", null ],
+        [ "ToUnsignedInteger", "namespaceDoipLib_1_1Convert.html#ac4b430c689be668b3ee2f970feb1d26c", null ]
       ] ],
       [ "EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", "classDoipLib_1_1EidVehicleIdRequest" ],
       [ "GenericNack", "classDoipLib_1_1GenericNack.html", "classDoipLib_1_1GenericNack" ],
