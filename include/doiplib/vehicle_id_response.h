@@ -24,6 +24,8 @@ namespace DoipLib
         bool mUseVehicleIdSync;
         uint8_t mVinGidStatus;
 
+        void SetPayload(const std::vector<uint8_t> &payload);
+
     protected:
         void GetPayload(std::vector<uint8_t> &payload) override;
 
@@ -42,7 +44,7 @@ namespace DoipLib
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
             uint16_t protocolVersion,
-            std::string vin,
+            const std::string &vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,
             std::array<uint8_t, cIdSize> gid,
@@ -75,7 +77,7 @@ namespace DoipLib
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
             uint16_t protocolVersion,
-            std::string vin,
+            const std::string &vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,
             std::array<uint8_t, cIdSize> gid,
