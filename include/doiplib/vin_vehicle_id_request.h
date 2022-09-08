@@ -17,24 +17,24 @@ namespace DoipLib
         std::string mVin;
 
     protected:
-         void GetPayload(std::vector<uint8_t> &payload) override;
+        void GetPayload(std::vector<uint8_t> &payload) override;
 
-         virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
-         
+        virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
+
     public:
         VinVehicleIdRequest() noexcept;
-        
-        /// @brief Constructor
-        /// @param protocolVersion DoIP ISO protocol version
-        /// @param vin Vehicle ID number filter
-        /// @throws std::out_of_range Throws if the given VIN is invalid
-        VinVehicleIdRequest(uint16_t protocolVersion, std::string vin);
 
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param vin Vehicle ID number filter
         /// @throws std::out_of_range Throws if the given VIN is invalid
-        VinVehicleIdRequest(uint16_t protocolVersion, std::string&& vin);
+        VinVehicleIdRequest(uint16_t protocolVersion, const std::string &vin);
+
+        /// @brief Constructor
+        /// @param protocolVersion DoIP ISO protocol version
+        /// @param vin Vehicle ID number filter
+        /// @throws std::out_of_range Throws if the given VIN is invalid
+        VinVehicleIdRequest(uint16_t protocolVersion, std::string &&vin);
 
         /// @brief Get VIN filter
         /// @return Vehicle ID number

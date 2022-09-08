@@ -14,6 +14,12 @@ namespace DoipLib
         EXPECT_THROW(
             VinVehicleIdRequest _message(cProtocolVersion, cInvalidVin),
             std::out_of_range);
+
+        std::string _invalidVin{cProtocolVersion};
+
+        EXPECT_THROW(
+            VinVehicleIdRequest _messageByMovingVin(cProtocolVersion, "ABC"),
+            std::out_of_range);
     }
 
     TEST(VinVehicleIdRequestTest, Serialization)

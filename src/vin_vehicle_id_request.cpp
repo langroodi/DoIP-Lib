@@ -13,7 +13,7 @@ namespace DoipLib
     }
 
     VinVehicleIdRequest::VinVehicleIdRequest(
-        uint16_t protocolVersion, std::string vin) : Message(protocolVersion, cPayloadType),
+        uint16_t protocolVersion, const std::string &vin) : Message(protocolVersion, cPayloadType),
                                                      mVin{vin.size() == cVinSize ? vin : throw std::out_of_range("Invalid vehicle ID number")}
     {
     }
