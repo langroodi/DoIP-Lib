@@ -30,12 +30,6 @@ namespace DoipLib
         EidVehicleIdRequest(
             uint16_t protocolVersion, std::array<uint8_t, cEidSize> eid);
 
-        /// @brief Constructor
-        /// @param protocolVersion DoIP ISO protocol version
-        /// @param eid Entity ID filter
-        EidVehicleIdRequest(
-            uint16_t protocolVersion, std::array<uint8_t, cEidSize> &&eid);
-
         /// @brief Get EID filter
         /// @return Entity ID
         std::array<uint8_t, cEidSize> GetEid() const;

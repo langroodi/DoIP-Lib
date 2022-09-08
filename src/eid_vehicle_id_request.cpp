@@ -1,4 +1,3 @@
-#include <utility>
 #include "doiplib/eid_vehicle_id_request.h"
 #include "doiplib/convert.h"
 
@@ -15,13 +14,6 @@ namespace DoipLib
         uint16_t protocolVersion,
         std::array<uint8_t, cEidSize> eid) : Message(protocolVersion, cPayloadType),
                                              mEid{eid}
-    {
-    }
-
-    EidVehicleIdRequest::EidVehicleIdRequest(
-        uint16_t protocolVersion,
-        std::array<uint8_t, cEidSize> &&eid) : Message(protocolVersion, cPayloadType),
-                                               mEid{std::move(eid)}
     {
     }
 
