@@ -1,6 +1,5 @@
 #include <iterator>
 #include <algorithm>
-#include <utility>
 #include <gtest/gtest.h>
 #include <doiplib/vehicle_id_response.h>
 
@@ -175,7 +174,7 @@ namespace DoipLib
     TEST(VehicleIdResponeTest, InvalidDeserialization)
     {
         const std::vector<uint8_t> cSerializedMessage{
-            0x02, 0xfd, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00};
+            0x02, 0xfd, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00};
 
         VehicleIdResponse _message;
         bool _succeed{_message.TryDeserialize(cSerializedMessage)};
