@@ -52,6 +52,7 @@ add_library(
   ${source_dir}/eid_vehicle_id_request.cpp
   ${source_dir}/vin_vehicle_id_request.cpp
   ${source_dir}/vehicle_id_response.cpp
+  ${source_dir}/routing_activation_request.cpp
 )
 
 target_include_directories(doip_lib
@@ -70,6 +71,7 @@ if(build_tests)
     ${test_dir}/eid_vehicle_id_request_test.cpp
     ${test_dir}/vin_vehicle_id_request_test.cpp
     ${test_dir}/vehicle_id_response_test.cpp
+    ${test_dir}/routing_activation_request_test.cpp
   )
 
   target_link_libraries(
