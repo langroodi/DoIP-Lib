@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "DoipLib", null, [
       [ "AliveCheckRequest", "classDoipLib_1_1AliveCheckRequest.html", "classDoipLib_1_1AliveCheckRequest" ],
+      [ "AliveCheckResponse", "classDoipLib_1_1AliveCheckResponse.html", "classDoipLib_1_1AliveCheckResponse" ],
       [ "EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", "classDoipLib_1_1EidVehicleIdRequest" ],
       [ "GenericNack", "classDoipLib_1_1GenericNack.html", "classDoipLib_1_1GenericNack" ],
       [ "Message", "classDoipLib_1_1Message.html", "classDoipLib_1_1Message" ],
