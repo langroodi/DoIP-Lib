@@ -6,17 +6,6 @@
 
 namespace DoipLib
 {
-    TEST(GenericNackTest, NackCodeProperty)
-    {
-        const uint8_t cProtocolVersion{0x02};
-        const NackType cExpectedResult{NackType::InvalidProtocolVersion};
-
-        GenericNack _message(cProtocolVersion, cExpectedResult);
-        NackType _actualResult{_message.GetNackCode()};
-
-        EXPECT_EQ(cExpectedResult, _actualResult);
-    }
-
     TEST(GenericNackTest, Serialization)
     {
         const uint8_t cProtocolVersion{0x02};
@@ -54,7 +43,7 @@ namespace DoipLib
     TEST(GenericNackTest, InvalidDeserialization)
     {
         const std::vector<uint8_t> cSerializedMessage{
-            0x02, 0xfd, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01};
+            0x02, 0xfd, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
         GenericNack _message;
         bool _succeed{_message.TryDeserialize(cSerializedMessage)};
