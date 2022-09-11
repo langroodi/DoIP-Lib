@@ -1,6 +1,3 @@
-#include <array>
-#include <iterator>
-#include <algorithm>
 #include <gtest/gtest.h>
 #include <doiplib/vehicle_id_request.h>
 
