@@ -63,11 +63,8 @@ namespace DoipLib
         std::size_t _offset{cHeaderSize};
 
         mTesterLogicalAddress = Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
-
         mEntityLogicalAddress = Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
-
-        uint8_t _responseCodeByte = payload.at(_offset);
-        mResponseCode = static_cast<RoutingActivationResponseType>(_responseCodeByte);
+        mResponseCode =Convert::ToEnum<RoutingActivationResponseType>(payload, _offset);
     }
 
     bool RoutingActivationResponse::TrySetPayload(const std::vector<uint8_t> &payload)

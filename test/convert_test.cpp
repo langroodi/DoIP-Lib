@@ -1,6 +1,7 @@
 #include <iterator>
 #include <gtest/gtest.h>
 #include <doiplib/convert.h>
+#include <doiplib/payload_type.h>
 
 namespace DoipLib
 {
@@ -58,6 +59,18 @@ namespace DoipLib
 
         EXPECT_EQ(cExpectedResult, _actualResult);
         EXPECT_EQ(sizeof(uint32_t), _offset);
+    }
+
+    TEST(ConvertTest, ByteVectorToEnum)
+    {
+        const PayloadType cExpectedResult{PayloadType::DiagMessage};
+        std::vector<uint8_t> _byteVector{0x80, 0x1};
+        std::size_t _offset{0};
+
+        auto _actualResult{Convert::ToEnum<PayloadType>(_byteVector, _offset)};
+
+        EXPECT_EQ(cExpectedResult, _actualResult);
+        EXPECT_EQ(sizeof(PayloadType), _offset);
     }
 
     TEST(ConvertTest, ByteVectorToByteArray)

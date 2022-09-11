@@ -1,4 +1,5 @@
 #include "doiplib/generic_nack.h"
+#include "doiplib/convert.h"
 
 namespace DoipLib
 {
@@ -23,14 +24,12 @@ namespace DoipLib
 
     bool GenericNack::TrySetPayload(const std::vector<uint8_t> &payload)
     {
-        const std::size_t cNackCodeIndex{cHeaderSize};
-        const std::size_t cExpectedSize{cNackCodeIndex + sizeof(NackType)};
+        const std::size_t cExpectedSize{cHeaderSize + sizeof(NackType)};
+        std::size_t _offset{cHeaderSize};
 
         if (payload.size() == cExpectedSize)
         {
-            uint8_t _nackCodeByte{payload.at(cNackCodeIndex)};
-            mNackCode = static_cast<NackType>(_nackCodeByte);
-
+            mNackCode = Convert::ToEnum<NackType>(payload, _offset);
             return true;
         }
         else

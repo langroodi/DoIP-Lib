@@ -56,9 +56,7 @@ namespace DoipLib
             return false;
         }
 
-        auto _payloadTypeInt{
-            Convert::ToUnsignedInteger<uint16_t>(serializedMessage, _offset)};
-        auto _payloadType{static_cast<PayloadType>(_payloadTypeInt)};
+        auto _payloadType{Convert::ToEnum<PayloadType>(serializedMessage, _offset)};
 
         // Payload type check
         if (_payloadType != mPayloadType)

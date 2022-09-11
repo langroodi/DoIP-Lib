@@ -5,6 +5,7 @@
 #include <array>
 #include <stdint.h>
 #include <string>
+#include <type_traits>
 #include <vector>
 
 namespace DoipLib
@@ -51,6 +52,23 @@ namespace DoipLib
                 _result <<= cByteOffset;
                 _result += vector.at(offset);
             }
+
+            return _result;
+        }
+
+        /// @brief Convert the given byte vector to an enum
+        /// @tparam T Enum with underlying unsigned integer type
+        /// @param vector Byte vector to be converted
+        /// @param[inout] offset Offset within the byte vector
+        /// @return Enum as the byte vector conversion result
+        /// @warning If the underlying enum type is not an unsigned integer, the behaviour is undefined.
+        template <typename T>
+        T ToEnum(const std::vector<uint8_t> &vector, std::size_t &offset)
+        {
+            auto _resultInt{
+                ToUnsignedInteger<typename std::underlying_type<T>::type>(
+                    vector, offset)};
+            auto _result{static_cast<T>(_resultInt)};
 
             return _result;
         }
