@@ -63,7 +63,7 @@ namespace DoipLib
             static_cast<std::size_t>(cHeaderSize + 7)};
         const std::size_t cExpectedSizeMax{
             static_cast<std::size_t>(cHeaderSize + 11)};
-        std::size_t cOemSpecificDataIndex{cExpectedSizeMin};
+        std::size_t _offset{cExpectedSizeMin};
 
         if (payload.size() == cExpectedSizeMin)
         {
@@ -79,7 +79,7 @@ namespace DoipLib
             // Has OEM-speific data
             mHasOemSpecificData = true;
             mOemSpecificData =
-                Convert::ToUnsignedInteger<uint32_t>(payload, cOemSpecificDataIndex);
+                Convert::ToUnsignedInteger<uint32_t>(payload, _offset);
 
             return true;
         }

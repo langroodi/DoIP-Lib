@@ -90,11 +90,11 @@ namespace DoipLib
     {
         if (serializedMessage.size() >= cHeaderSize)
         {
-            std::size_t cPayloadOffset{2};
+            std::size_t _payloadOffset{2};
 
             auto _payloadTypeInt{
                 Convert::ToUnsignedInteger<uint16_t>(
-                    serializedMessage, cPayloadOffset)};
+                    serializedMessage, _payloadOffset)};
             payloadType = static_cast<PayloadType>(_payloadTypeInt);
 
             return true;
