@@ -38,7 +38,7 @@ namespace DoipLib
         /// @param[inout] offset Offset within the byte vector
         /// @return Unsigned integer as the byte vector conversion result
         template <typename T>
-        T ToUnsignedInteger(const std::vector<uint8_t> &vector, std::size_t &offset = 0)
+        T ToUnsignedInteger(const std::vector<uint8_t> &vector, std::size_t &offset)
         {
             const std::size_t cUnsignedIntegerSize{sizeof(T)};
 
