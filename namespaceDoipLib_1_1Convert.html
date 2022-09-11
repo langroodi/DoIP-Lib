@@ -111,6 +111,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a15ac1e5d5d67df10d94483b91ecf9080"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a15ac1e5d5d67df10d94483b91ecf9080">ToUnsignedInteger</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset)</td></tr>
 <tr class="memdesc:a15ac1e5d5d67df10d94483b91ecf9080"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to an unsigned integer.  <a href="namespaceDoipLib_1_1Convert.html#a15ac1e5d5d67df10d94483b91ecf9080">More...</a><br /></td></tr>
 <tr class="separator:a15ac1e5d5d67df10d94483b91ecf9080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0050ad848f70bf9b894694da5400b338"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0050ad848f70bf9b894694da5400b338"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a0050ad848f70bf9b894694da5400b338">ToEnum</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset)</td></tr>
+<tr class="memdesc:a0050ad848f70bf9b894694da5400b338"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to an enum.  <a href="namespaceDoipLib_1_1Convert.html#a0050ad848f70bf9b894694da5400b338">More...</a><br /></td></tr>
+<tr class="separator:a0050ad848f70bf9b894694da5400b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b6a30ef2e2b75a96a97584143283b61"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
 <tr class="memitem:a9b6a30ef2e2b75a96a97584143283b61"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; uint8_t, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">ToByteArray</a> (const std::vector&lt; uint8_t &gt; &amp;vector, std::size_t &amp;offset=0)</td></tr>
 <tr class="memdesc:a9b6a30ef2e2b75a96a97584143283b61"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to a byte array.  <a href="namespaceDoipLib_1_1Convert.html#a9b6a30ef2e2b75a96a97584143283b61">More...</a><br /></td></tr>
@@ -211,6 +215,53 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0050ad848f70bf9b894694da5400b338" name="a0050ad848f70bf9b894694da5400b338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0050ad848f70bf9b894694da5400b338">&#9670;&nbsp;</a></span>ToEnum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T DoipLib::Convert::ToEnum </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceDoipLib_1_1Convert.html" title="Helper functions namespace for conversion from/to byte vector.">Convert</a> the given byte vector to an enum. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Enum with underlying unsigned integer type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">vector</td><td>Byte vector to be converted </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>Offset within the byte vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Enum as the byte vector conversion result </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the underlying enum type is not an unsigned integer, the behaviour is undefined. </dd></dl>
 
 </div>
 </div>
