@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['message_0',['Message',['../classDoipLib_1_1Message.html',1,'DoipLib']]]
+  ['genericnack_0',['GenericNack',['../classDoipLib_1_1GenericNack.html',1,'DoipLib']]]
 ];

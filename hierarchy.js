@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "DoipLib::Message", "classDoipLib_1_1Message.html", [
+      [ "DoipLib::AliveCheckRequest", "classDoipLib_1_1AliveCheckRequest.html", null ],
       [ "DoipLib::EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", null ],
       [ "DoipLib::GenericNack", "classDoipLib_1_1GenericNack.html", null ],
       [ "DoipLib::RoutingActivationRequest", "classDoipLib_1_1RoutingActivationRequest.html", null ],
