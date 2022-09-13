@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DoIP Library: Class Index</title>
+<title>DoIP Library: include/doiplib/power_mode_type.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('classes.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('power__mode__type_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,38 +92,31 @@ $(document).ready(function(){initNavTree('classes.html',''); initResizable(); })
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Class Index</div></div>
+  <div class="headertitle"><div class="title">power_mode_type.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_E">E</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
-<div class="classindex">
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_A" name="letter_A">A</a></dt>
-<dd><a class="el" href="classDoipLib_1_1AliveCheckRequest.html">AliveCheckRequest</a> (DoipLib)</dd><dd><a class="el" href="classDoipLib_1_1AliveCheckResponse.html">AliveCheckResponse</a> (DoipLib)</dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_E" name="letter_E">E</a></dt>
-<dd><a class="el" href="classDoipLib_1_1EidVehicleIdRequest.html">EidVehicleIdRequest</a> (DoipLib)</dd></dl>
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_G" name="letter_G">G</a></dt>
-<dd><a class="el" href="classDoipLib_1_1GenericNack.html">GenericNack</a> (DoipLib)</dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_M" name="letter_M">M</a></dt>
-<dd><a class="el" href="classDoipLib_1_1Message.html">Message</a> (DoipLib)</dd></dl>
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_P" name="letter_P">P</a></dt>
-<dd><a class="el" href="classDoipLib_1_1PowerModeRequest.html">PowerModeRequest</a> (DoipLib)</dd><dd><a class="el" href="classDoipLib_1_1PowerModeResponse.html">PowerModeResponse</a> (DoipLib)</dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_R" name="letter_R">R</a></dt>
-<dd><a class="el" href="classDoipLib_1_1RoutingActivationRequest.html">RoutingActivationRequest</a> (DoipLib)</dd><dd><a class="el" href="classDoipLib_1_1RoutingActivationResponse.html">RoutingActivationResponse</a> (DoipLib)</dd></dl>
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_V" name="letter_V">V</a></dt>
-<dd><a class="el" href="classDoipLib_1_1VehicleIdRequest.html">VehicleIdRequest</a> (DoipLib)</dd><dd><a class="el" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a> (DoipLib)</dd><dd><a class="el" href="classDoipLib_1_1VinVehicleIdRequest.html">VinVehicleIdRequest</a> (DoipLib)</dd></dl>
-</div>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POWER_MODE_TYPE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POWER_MODE_TYPE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>DoipLib</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">enum class</span> PowerModeType : uint8_t</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        NotReady = 0x00,    </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        Ready = 0x01,       </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        NotSupported = 0x02 </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    };</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_996b88d36f12711e8e144ad831a578d2.html">doiplib</a></li><li class="navelem"><b>power_mode_type.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
