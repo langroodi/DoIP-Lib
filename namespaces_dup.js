@@ -12,6 +12,7 @@ var namespaces_dup =
       [ "AliveCheckResponse", "classDoipLib_1_1AliveCheckResponse.html", "classDoipLib_1_1AliveCheckResponse" ],
       [ "EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", "classDoipLib_1_1EidVehicleIdRequest" ],
       [ "EntityStatusRequest", "classDoipLib_1_1EntityStatusRequest.html", "classDoipLib_1_1EntityStatusRequest" ],
+      [ "EntityStatusResponse", "classDoipLib_1_1EntityStatusResponse.html", "classDoipLib_1_1EntityStatusResponse" ],
       [ "GenericNack", "classDoipLib_1_1GenericNack.html", "classDoipLib_1_1GenericNack" ],
       [ "Message", "classDoipLib_1_1Message.html", "classDoipLib_1_1Message" ],
       [ "PowerModeRequest", "classDoipLib_1_1PowerModeRequest.html", "classDoipLib_1_1PowerModeRequest" ],

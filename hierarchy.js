@@ -5,6 +5,7 @@ var hierarchy =
       [ "DoipLib::AliveCheckResponse", "classDoipLib_1_1AliveCheckResponse.html", null ],
       [ "DoipLib::EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", null ],
       [ "DoipLib::EntityStatusRequest", "classDoipLib_1_1EntityStatusRequest.html", null ],
+      [ "DoipLib::EntityStatusResponse", "classDoipLib_1_1EntityStatusResponse.html", null ],
       [ "DoipLib::GenericNack", "classDoipLib_1_1GenericNack.html", null ],
       [ "DoipLib::PowerModeRequest", "classDoipLib_1_1PowerModeRequest.html", null ],
       [ "DoipLib::PowerModeResponse", "classDoipLib_1_1PowerModeResponse.html", null ],
