@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['eidvehicleidrequest_0',['EidVehicleIdRequest',['../classDoipLib_1_1EidVehicleIdRequest.html#aae9404452f3938ca16ba728114dbd53e',1,'DoipLib::EidVehicleIdRequest']]],
-  ['entitystatusrequest_1',['EntityStatusRequest',['../classDoipLib_1_1EntityStatusRequest.html#a54ae17ebc63d18d6c0db5106d7cd03f0',1,'DoipLib::EntityStatusRequest']]],
-  ['entitystatusresponse_2',['EntityStatusResponse',['../classDoipLib_1_1EntityStatusResponse.html#a696ae28427358f07e4ab6b88b5844de6',1,'DoipLib::EntityStatusResponse::EntityStatusResponse(uint16_t protocolVersion, NodeType entityType, uint8_t maxOpenSockets, uint8_t currentlyOpenSocket) noexcept'],['../classDoipLib_1_1EntityStatusResponse.html#a7128db1a3e65e7c64d7fce5997daddc6',1,'DoipLib::EntityStatusResponse::EntityStatusResponse(uint16_t protocolVersion, NodeType entityType, uint8_t maxOpenSockets, uint8_t currentlyOpenSocket, uint32_t maxDataSize) noexcept']]]
+  ['diagmessage_0',['DiagMessage',['../classDoipLib_1_1DiagMessage.html#adc367d4a21f33c3d6f7f9b12cc0ed15b',1,'DoipLib::DiagMessage::DiagMessage(uint8_t protocolVersion, uint16_t sourceAddress, uint16_t targetAddress, const std::vector&lt; uint8_t &gt; &amp;userData)'],['../classDoipLib_1_1DiagMessage.html#a0df41999382abd9c3afbca3cf4bb64ef',1,'DoipLib::DiagMessage::DiagMessage(uint8_t protocolVersion, uint16_t sourceAddress, uint16_t targetAddress, std::vector&lt; uint8_t &gt; &amp;&amp;userData)']]]
 ];

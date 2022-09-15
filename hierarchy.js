@@ -3,6 +3,7 @@ var hierarchy =
     [ "DoipLib::Message", "classDoipLib_1_1Message.html", [
       [ "DoipLib::AliveCheckRequest", "classDoipLib_1_1AliveCheckRequest.html", null ],
       [ "DoipLib::AliveCheckResponse", "classDoipLib_1_1AliveCheckResponse.html", null ],
+      [ "DoipLib::DiagMessage", "classDoipLib_1_1DiagMessage.html", null ],
       [ "DoipLib::EidVehicleIdRequest", "classDoipLib_1_1EidVehicleIdRequest.html", null ],
       [ "DoipLib::EntityStatusRequest", "classDoipLib_1_1EntityStatusRequest.html", null ],
       [ "DoipLib::EntityStatusResponse", "classDoipLib_1_1EntityStatusResponse.html", null ],

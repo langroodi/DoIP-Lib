@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['powermoderequest_0',['PowerModeRequest',['../classDoipLib_1_1PowerModeRequest.html#a1bfc996402231aeeceb923428907bbab',1,'DoipLib::PowerModeRequest']]],
-  ['powermoderesponse_1',['PowerModeResponse',['../classDoipLib_1_1PowerModeResponse.html#a1fc53ef04b143c6d7d252bac02af8b44',1,'DoipLib::PowerModeResponse']]]
+  ['message_0',['Message',['../classDoipLib_1_1Message.html#a1a726e407f06f1dfe850866371d3f5b1',1,'DoipLib::Message::Message(PayloadType payloadType) noexcept'],['../classDoipLib_1_1Message.html#a726baafe7170a4f2c3fc193747bf781a',1,'DoipLib::Message::Message(uint8_t protocolVersion, PayloadType payloadType) noexcept']]]
 ];
