@@ -60,6 +60,7 @@ add_library(
   ${source_dir}/power_mode_response.cpp
   ${source_dir}/entity_status_request.cpp
   ${source_dir}/entity_status_response.cpp
+  ${source_dir}/diag_message.cpp
 )
 
 target_include_directories(doip_lib
@@ -86,6 +87,7 @@ if(build_tests)
     ${test_dir}/power_mode_response_test.cpp
     ${test_dir}/entity_status_request_test.cpp
     ${test_dir}/entity_status_response_test.cpp
+    ${test_dir}/diag_message_test.cpp
   )
 
   target_link_libraries(
