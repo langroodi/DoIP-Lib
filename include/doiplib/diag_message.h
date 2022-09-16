@@ -25,8 +25,8 @@ namespace DoipLib
 
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        /// @param sourceAddress Tester logical address
-        /// @param targetAddress DoIP node logical address
+        /// @param sourceAddress Sender logical address
+        /// @param targetAddress Receiver logical address
         /// @param userData Actual diagnostic payload data (e.g., UDS message payload)
         DiagMessage(
             uint8_t protocolVersion,
@@ -36,8 +36,8 @@ namespace DoipLib
 
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        /// @param sourceAddress Tester logical address
-        /// @param targetAddress DoIP node logical address
+        /// @param sourceAddress Sender logical address
+        /// @param targetAddress Receiver logical address
         /// @param userData Actual diagnostic payload data (e.g., UDS message payload)
         DiagMessage(
             uint8_t protocolVersion,
@@ -46,11 +46,11 @@ namespace DoipLib
             std::vector<uint8_t> &&userData);
 
         /// @brief Get message source address
-        /// @return Tester logical address
+        /// @return Sender logical address
         uint16_t GetSourceAddress() const noexcept;
 
         /// @brief Get message target address
-        /// @return DoIP node logical address
+        /// @return Receiver logical address
         uint16_t GetTargetAddress() const noexcept;
 
         /// @brief Get user data
