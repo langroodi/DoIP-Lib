@@ -6,7 +6,7 @@
 namespace DoipLib
 {
     /// @brief Generic negative acknowledgement type
-    enum class NackType : uint8_t
+    enum class GenericNackType : uint8_t
     {
         InvalidProtocolVersion = 0x00,  ///!< Invalid DoIP protocol information
         UnsupportedPayloadType = 0x01,  ///!< Unsupported DoIP payload type

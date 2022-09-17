@@ -2,7 +2,7 @@
 #define GENERIC_NACK_H
 
 #include "./message.h"
-#include "./nack_type.h"
+#include "./generic_nack_type.h"
 
 namespace DoipLib
 {
@@ -13,7 +13,7 @@ namespace DoipLib
         static const PayloadType cPayloadType{
             PayloadType::GenericNegativeAcknowledgement};
 
-        NackType mNackCode;
+        GenericNackType mNackCode;
 
     protected:
          void GetPayload(std::vector<uint8_t> &payload) override;
@@ -26,11 +26,11 @@ namespace DoipLib
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param nackCode Negative acknowledgement code
-        GenericNack(uint16_t protocolVersion, NackType nackCode) noexcept;
+        GenericNack(uint16_t protocolVersion, GenericNackType nackCode) noexcept;
 
         /// @brief Get NACK code
         /// @return Negative acknoweledgement code
-        NackType GetNackCode() const noexcept;
+        GenericNackType GetNackCode() const noexcept;
     };
 }
 
