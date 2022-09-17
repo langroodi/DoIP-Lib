@@ -100,7 +100,6 @@ namespace DoipLib
             bool _succeed{TrySetCompulsoryPayload(payload)};
             if (_succeed)
             {
-                TrySetCompulsoryPayload(payload);
                 // Has OEM-speific data
                 mHasOemSpecificData = true;
                 mOemSpecificData =
