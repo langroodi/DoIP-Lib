@@ -23,7 +23,7 @@ namespace DoipLib
 
     bool AliveCheckResponse::TrySetPayload(const std::vector<uint8_t> &payload)
     {
-        std::size_t cExpectedSize{cHeaderSize + 2};
+        const std::size_t cExpectedSize{cHeaderSize + 2};
         std::size_t _offset{cHeaderSize};
 
         if (payload.size() == cExpectedSize)

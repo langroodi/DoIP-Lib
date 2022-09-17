@@ -52,7 +52,7 @@ namespace DoipLib
         EXPECT_TRUE(_areEqual);
     }
 
-    TEST(RoutingActivationRequestTest, DeserializationWithoutOemData)
+    TEST(RoutingActivationRequestTest, ValidDeserializationWithoutOemData)
     {
         const uint16_t cSourceAddress{0x0001};
         const uint8_t cActivationType{0xe0};
@@ -68,7 +68,7 @@ namespace DoipLib
         EXPECT_EQ(cActivationType, _message.GetActivationType());
     }
 
-    TEST(RoutingActivationRequestTest, DeserializationUsingOemData)
+    TEST(RoutingActivationRequestTest, ValidDeserializationUsingOemData)
     {
         const uint32_t cExpectedResult{0x12345678};
         const std::vector<uint8_t> cSerializedMessage{
@@ -85,10 +85,32 @@ namespace DoipLib
         EXPECT_EQ(cExpectedResult, _actualResult);
     }
 
-    TEST(RoutingActivationRequestTest, InvalidDeserialization)
+    TEST(RoutingActivationRequestTest, InvalidSizeDeserialization)
     {
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x05, 0x00, 0x00, 0x00, 0x00};
+
+        RoutingActivationRequest _message;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST(RoutingActivationRequestTest, InvalidDeserializationWithoutOemData)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x05, 0x00, 0x00, 0x00, 0x07,
+            0x00, 0x01, 0xe0, 0x0a, 0x0b, 0x0c, 0x0d};
+
+        RoutingActivationRequest _message;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        EXPECT_FALSE(_succeed);
+    }
+
+    TEST(RoutingActivationRequestTest, InvalidDeserializationUsingOemData)
+    {
+        const std::vector<uint8_t> cSerializedMessage{
+            0x02, 0xfd, 0x00, 0x05, 0x00, 0x00, 0x00, 0x0b,
+            0x00, 0x01, 0xe0, 0x0a, 0x0b, 0x0c, 0x0d, 0x12, 0x34, 0x56, 0x78};
 
         RoutingActivationRequest _message;
         bool _succeed{_message.TryDeserialize(cSerializedMessage)};

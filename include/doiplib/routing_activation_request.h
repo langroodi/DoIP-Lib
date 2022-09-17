@@ -25,7 +25,7 @@ namespace DoipLib
             bool hasOemSpecificData,
             uint32_t oemSpecificData = 0) noexcept;
 
-        void SetPayload(const std::vector<uint8_t> &payload);
+        bool TrySetCompulsoryPayload(const std::vector<uint8_t> &payload);
 
     protected:
         void GetPayload(std::vector<uint8_t> &payload) override;

@@ -49,12 +49,31 @@ namespace DoipLib
         Convert::ToByteVector<uint16_t>(mSourceAddress, payload);
     }
 
-    void RoutingActivationRequest::SetPayload(const std::vector<uint8_t> &payload)
+    bool RoutingActivationRequest::TrySetCompulsoryPayload(
+        const std::vector<uint8_t> &payload)
     {
         std::size_t _offset{cHeaderSize};
 
-        mSourceAddress = Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
-        mActivationType = payload.at(_offset);
+        auto _sourceAddress{
+            Convert::ToUnsignedInteger<uint16_t>(payload, _offset)};
+        auto _activationType{
+            Convert::ToUnsignedInteger<uint8_t>(payload, _offset)};
+
+        // Reserved bytes validation
+        auto _actualReservedInt{
+            Convert::ToUnsignedInteger<uint32_t>(payload, _offset)};
+
+        if (_actualReservedInt == cIsoReserved)
+        {
+            mSourceAddress = _sourceAddress;
+            mActivationType = _activationType;
+
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     bool RoutingActivationRequest::TrySetPayload(const std::vector<uint8_t> &payload)
@@ -67,21 +86,28 @@ namespace DoipLib
 
         if (payload.size() == cExpectedSizeMin)
         {
-            SetPayload(payload);
-            // No OEM-specific data
-            mHasOemSpecificData = false;
+            bool _succeed{TrySetCompulsoryPayload(payload)};
+            if (_succeed)
+            {
+                // No OEM-specific data
+                mHasOemSpecificData = false;
+            }
 
-            return true;
+            return _succeed;
         }
         else if (payload.size() == cExpectedSizeMax)
         {
-            SetPayload(payload);
-            // Has OEM-speific data
-            mHasOemSpecificData = true;
-            mOemSpecificData =
-                Convert::ToUnsignedInteger<uint32_t>(payload, _offset);
+            bool _succeed{TrySetCompulsoryPayload(payload)};
+            if (_succeed)
+            {
+                TrySetCompulsoryPayload(payload);
+                // Has OEM-speific data
+                mHasOemSpecificData = true;
+                mOemSpecificData =
+                    Convert::ToUnsignedInteger<uint32_t>(payload, _offset);
+            }
 
-            return true;
+            return _succeed;
         }
         else
         {
