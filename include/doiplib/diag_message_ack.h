@@ -32,7 +32,6 @@ namespace DoipLib
         /// @param protocolVersion DoIP ISO protocol version
         /// @param sourceAddress Sender logical address
         /// @param targetAddress Receiver logical address
-        /// @param previousMessage Previous diagnostic message payload
         DiagMessageAck(
             uint8_t protocolVersion,
             uint16_t sourceAddress,
