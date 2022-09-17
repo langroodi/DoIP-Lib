@@ -32,7 +32,7 @@ namespace DoipLib
 
         /// @brief Try to set message payload
         /// @param[in] payload Payload byte array
-        /// @returns True if the payload is set successfully, otherwise false
+        /// @return True if the payload is set successfully, otherwise false
         virtual bool TrySetPayload(const std::vector<uint8_t> &payload) = 0;
 
     public:
@@ -42,7 +42,7 @@ namespace DoipLib
 
         /// @brief Try to deserialize DoIP message
         /// @param[in] serializedMessage Serialize message byte array
-        /// @returns True if the deserialization is successful, otherwise false
+        /// @return True if the deserialization is successful, otherwise false
         bool TryDeserialize(const std::vector<uint8_t> &serializedMessage);
 
         /// @brief Try to extract the payload type from the given serialized message
