@@ -1,5 +1,5 @@
-#ifndef NACK_TYPE_H
-#define NACK_TYPE_H
+#ifndef GENERIC_NACK_TYPE_H
+#define GENERIC_NACK_TYPE_H
 
 #include <stdint.h>
 

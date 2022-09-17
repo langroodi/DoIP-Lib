@@ -62,6 +62,7 @@ add_library(
   ${source_dir}/entity_status_response.cpp
   ${source_dir}/diag_message.cpp
   ${source_dir}/diag_message_ack.cpp
+  ${source_dir}/diag_message_nack.cpp
 )
 
 target_include_directories(doip_lib
@@ -90,6 +91,7 @@ if(build_tests)
     ${test_dir}/entity_status_response_test.cpp
     ${test_dir}/diag_message_test.cpp
     ${test_dir}/diag_message_ack_test.cpp
+    ${test_dir}/diag_message_nack_test.cpp
   )
 
   target_link_libraries(
