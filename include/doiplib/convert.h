@@ -23,13 +23,14 @@ namespace DoipLib
         template <typename T>
         void ToByteVector(T unsignedInteger, std::vector<uint8_t> &vector)
         {
+            const auto cCastedByteOffset{static_cast<T>(cByteOffset)};
             const std::size_t cUnsignedIntegerSize{sizeof(T)};
 
             for (std::size_t i = 0; i < cUnsignedIntegerSize; ++i)
             {
                 auto _byte{static_cast<uint8_t>(unsignedInteger & cByteMask)};
                 vector.insert(vector.begin(), _byte);
-                unsignedInteger >>= cByteOffset;
+                unsignedInteger = unsignedInteger >> cCastedByteOffset;
             }
         }
 
@@ -41,6 +42,7 @@ namespace DoipLib
         template <typename T>
         T ToUnsignedInteger(const std::vector<uint8_t> &vector, std::size_t &offset)
         {
+            const auto cCastedByteOffset{static_cast<T>(cByteOffset)};
             const std::size_t cUnsignedIntegerSize{sizeof(T)};
 
             auto _offsetUpperBound{static_cast<std::size_t>(offset + cUnsignedIntegerSize)};
@@ -49,7 +51,7 @@ namespace DoipLib
 
             for (++offset; offset < _offsetUpperBound; ++offset)
             {
-                _result <<= cByteOffset;
+                _result = _result << cCastedByteOffset;
                 _result += vector.at(offset);
             }
 
@@ -79,7 +81,7 @@ namespace DoipLib
         /// @param[inout] offset Offset within the byte vector
         /// @return Byte array as the byte vector conversion result
         template <std::size_t N>
-        std::array<uint8_t, N> ToByteArray(const std::vector<uint8_t> &vector, std::size_t &offset = 0)
+        std::array<uint8_t, N> ToByteArray(const std::vector<uint8_t> &vector, std::size_t &offset)
         {
             auto _beginItr = vector.cbegin() + offset;
             std::array<uint8_t, N> _result;
@@ -95,7 +97,7 @@ namespace DoipLib
         /// @param[inout] offset Offset within the byte vector
         /// @return String as the byte vector conversion result
         template <std::size_t N>
-        std::string ToString(const std::vector<uint8_t> &vector, std::size_t &offset = 0)
+        std::string ToString(const std::vector<uint8_t> &vector, std::size_t &offset)
         {
             auto _beginItr{vector.cbegin() + offset};
             offset += N;
