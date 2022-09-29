@@ -2,7 +2,6 @@
 #define GENERIC_NACK_H
 
 #include "./message.h"
-#include "./generic_nack_type.h"
 
 namespace DoipLib
 {

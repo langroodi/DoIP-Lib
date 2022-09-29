@@ -53,44 +53,61 @@ namespace DoipLib
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00};
 
-        bool _succeed{TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
     }
 
     TEST_F(MessageTest, InvalidHeaderDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00};
 
-        bool _succeed{TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 
     TEST_F(MessageTest, InvalidVersionDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidProtocolVersion};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xff, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00};
 
-        bool _succeed{TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 
     TEST_F(MessageTest, InvalidTypeDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::UnsupportedPayloadType};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-        bool _succeed{TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 
     TEST_F(MessageTest, InvalidLengthDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
-            0x02, 0xfd, 0x00, 0x02, 0x00, 0x00, 0x00, 0x01};
+            0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01};
 
-        bool _succeed{TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 
     TEST_F(MessageTest, ValidPayloadTypeExtraction)

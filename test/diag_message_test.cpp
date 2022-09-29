@@ -63,7 +63,8 @@ namespace DoipLib
             0x00, 0x01, 0x00, 0x02, 0xab, 0xcd, 0xef};
 
         DiagMessage _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
 
         EXPECT_EQ(cSourceAddress, _message.GetSourceAddress());
@@ -76,11 +77,15 @@ namespace DoipLib
 
     TEST(DiagMessageTest, InvalidDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00};
 
         DiagMessage _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 }

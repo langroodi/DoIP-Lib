@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "./payload_type.h"
+#include "./generic_nack_type.h"
 
 namespace DoipLib
 {
@@ -42,8 +43,11 @@ namespace DoipLib
 
         /// @brief Try to deserialize DoIP message
         /// @param[in] serializedMessage Serialize message byte array
+        /// @param[out] nackCode Negative acknowledgement code if deserialization failed
         /// @return True if the deserialization is successful, otherwise false
-        bool TryDeserialize(const std::vector<uint8_t> &serializedMessage);
+        bool TryDeserialize(
+            const std::vector<uint8_t> &serializedMessage,
+            GenericNackType &nackCode);
 
         /// @brief Try to extract the payload type from the given serialized message
         /// @param[in] serializedMessage Serialized message byte array

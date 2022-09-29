@@ -64,7 +64,8 @@ namespace DoipLib
             0x00, 0x01, 0x00, 0x02, 0x10, 0x00, 0x00, 0x00, 0x00};
 
         RoutingActivationResponse _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
 
         EXPECT_EQ(cTesterLogicalAddress, _message.GetTesterLogicalAddress());
@@ -80,7 +81,8 @@ namespace DoipLib
             0x00, 0x01, 0x00, 0x02, 0x10, 0x00, 0x00, 0x00, 0x00, 0x12, 0x34, 0x56, 0x78};
 
         RoutingActivationResponse _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
 
         uint32_t _actualResult;
@@ -91,11 +93,15 @@ namespace DoipLib
 
     TEST(RoutingActivationResponseTest, InvalidDeserialization)
     {
+                const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00};
 
         RoutingActivationResponse _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 }

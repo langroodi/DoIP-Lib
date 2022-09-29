@@ -51,7 +51,8 @@ namespace DoipLib
             0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4a, 0x4b, 0x4c, 0x4d, 0x4e, 0x4f, 0x50, 0x51};
 
         VinVehicleIdRequest _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
 
         std::string _actualResult{_message.GetVin()};
@@ -60,11 +61,15 @@ namespace DoipLib
 
     TEST(VinVehicleIdRequestTest, InvalidDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00};
 
         VinVehicleIdRequest _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 }

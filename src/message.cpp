@@ -32,11 +32,14 @@ namespace DoipLib
         serializedMessage.insert(serializedMessage.begin(), mProtocolVersion);
     }
 
-    bool Message::TryDeserialize(const std::vector<uint8_t> &serializedMessage)
+    bool Message::TryDeserialize(
+        const std::vector<uint8_t> &serializedMessage,
+        GenericNackType &nackCode)
     {
         // Header length check
         if (serializedMessage.size() < cHeaderSize)
         {
+            nackCode = GenericNackType::InvalidPayloadLength;
             return false;
         }
 
@@ -53,6 +56,7 @@ namespace DoipLib
 
         if (_actualProtocolVersion != _expectedProtocolVersion)
         {
+            nackCode = GenericNackType::InvalidProtocolVersion;
             return false;
         }
 
@@ -61,6 +65,7 @@ namespace DoipLib
         // Payload type check
         if (_payloadType != mPayloadType)
         {
+            nackCode = GenericNackType::UnsupportedPayloadType;
             return false;
         }
 
@@ -70,6 +75,7 @@ namespace DoipLib
         // Payload length check
         if (_payloadLength != serializedMessage.size() - cHeaderSize)
         {
+            nackCode = GenericNackType::InvalidPayloadLength;
             return false;
         }
 
@@ -77,6 +83,10 @@ namespace DoipLib
         if (_succeed)
         {
             mProtocolVersion = _actualProtocolVersion;
+        }
+        else
+        {
+            nackCode = GenericNackType::InvalidPayloadLength;
         }
 
         return _succeed;

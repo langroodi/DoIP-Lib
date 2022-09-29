@@ -38,7 +38,8 @@ namespace DoipLib
             0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff};
 
         EidVehicleIdRequest _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _nackCode;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
 
         std::array<uint8_t, cEidSize> _actualResult{_message.GetEid()};
@@ -47,11 +48,15 @@ namespace DoipLib
 
     TEST(EidVehicleIdRequestTest, InvalidDeserialization)
     {
+        const GenericNackType cExceptedResult{GenericNackType::InvalidPayloadLength};
         const std::vector<uint8_t> cSerializedMessage{
             0x02, 0xfd, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00};
 
         EidVehicleIdRequest _message;
-        bool _succeed{_message.TryDeserialize(cSerializedMessage)};
+        GenericNackType _actualResult;
+        bool _succeed{_message.TryDeserialize(cSerializedMessage, _actualResult)};
+
         EXPECT_FALSE(_succeed);
+        EXPECT_EQ(cExceptedResult, _actualResult);
     }
 }
