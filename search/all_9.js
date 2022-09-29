@@ -5,7 +5,7 @@ var searchData=
   ['toenum_2',['ToEnum',['../namespaceDoipLib_1_1Convert.html#a0050ad848f70bf9b894694da5400b338',1,'DoipLib::Convert']]],
   ['tostring_3',['ToString',['../namespaceDoipLib_1_1Convert.html#a3822a46704c8ea965a2c00aecc96c9c5',1,'DoipLib::Convert']]],
   ['tounsignedinteger_4',['ToUnsignedInteger',['../namespaceDoipLib_1_1Convert.html#a15ac1e5d5d67df10d94483b91ecf9080',1,'DoipLib::Convert']]],
-  ['trydeserialize_5',['TryDeserialize',['../classDoipLib_1_1Message.html#ac25b88c5012a603aff30988be1c35861',1,'DoipLib::Message']]],
+  ['trydeserialize_5',['TryDeserialize',['../classDoipLib_1_1Message.html#a9bef3b020cdf637e0470bce76fea7fe9',1,'DoipLib::Message']]],
   ['tryextractpayloadtype_6',['TryExtractPayloadType',['../classDoipLib_1_1Message.html#afae51e744141f5ce8ea50f2d9f920498',1,'DoipLib::Message']]],
   ['trygetmaxdatasize_7',['TryGetMaxDataSize',['../classDoipLib_1_1EntityStatusResponse.html#a5aab0658ac48a0d6958c03cb2c7e6e9f',1,'DoipLib::EntityStatusResponse']]],
   ['trygetoemspecificdata_8',['TryGetOemSpecificData',['../classDoipLib_1_1RoutingActivationRequest.html#a9a184c906461d5491744ccbdeb77142f',1,'DoipLib::RoutingActivationRequest::TryGetOemSpecificData()'],['../classDoipLib_1_1RoutingActivationResponse.html#ace4983717f63019781a1d608c7f56036',1,'DoipLib::RoutingActivationResponse::TryGetOemSpecificData()']]],
