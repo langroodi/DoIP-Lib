@@ -22,6 +22,6 @@ namespace DoipLib
     bool VehicleIdRequest::TrySetPayload(const std::vector<uint8_t> &payload)
     {
         // The message contain no payload.
-        return true;
+        return payload.size() == cHeaderSize;
     }
 }
