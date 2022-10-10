@@ -29,7 +29,7 @@ namespace DoipLib
 
         /// @brief Get message payload
         /// @param[out] payload Payload byte array
-        virtual void GetPayload(std::vector<uint8_t> &payload) = 0;
+        virtual void GetPayload(std::vector<uint8_t> &payload) const = 0;
 
         /// @brief Try to set message payload
         /// @param[in] payload Payload byte array
@@ -39,7 +39,7 @@ namespace DoipLib
     public:
         /// @brief Serialize DoIP message
         /// @param[out] serializedMessage Serialize message byte array
-        void Serialize(std::vector<uint8_t> &serializedMessage);
+        void Serialize(std::vector<uint8_t> &serializedMessage) const;
 
         /// @brief Try to deserialize DoIP message
         /// @param[in] serializedMessage Serialize message byte array

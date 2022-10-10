@@ -24,7 +24,7 @@ namespace DoipLib
     {
     }
 
-    void VinVehicleIdRequest::GetPayload(std::vector<uint8_t> &payload)
+    void VinVehicleIdRequest::GetPayload(std::vector<uint8_t> &payload) const
     {
         payload = std::vector<uint8_t>(mVin.cbegin(), mVin.cend());
     }

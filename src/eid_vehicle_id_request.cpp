@@ -17,7 +17,7 @@ namespace DoipLib
     {
     }
 
-    void EidVehicleIdRequest::GetPayload(std::vector<uint8_t> &payload)
+    void EidVehicleIdRequest::GetPayload(std::vector<uint8_t> &payload) const
     {
         payload = std::vector<uint8_t>(mEid.cbegin(), mEid.cend());
     }

@@ -16,7 +16,7 @@ namespace DoipLib
     {
     }
 
-    void AliveCheckResponse::GetPayload(std::vector<uint8_t> &payload)
+    void AliveCheckResponse::GetPayload(std::vector<uint8_t> &payload) const
     {
         Convert::ToByteVector<uint16_t>(mSourceAddress, payload);
     }

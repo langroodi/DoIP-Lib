@@ -41,7 +41,7 @@ namespace DoipLib
     {
     }
 
-    void RoutingActivationResponse::GetPayload(std::vector<uint8_t> &payload)
+    void RoutingActivationResponse::GetPayload(std::vector<uint8_t> &payload) const
     {
         if (mHasOemSpecificData)
         {

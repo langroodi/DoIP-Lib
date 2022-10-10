@@ -16,7 +16,7 @@ namespace DoipLib
     {
     }
 
-    void GenericNack::GetPayload(std::vector<uint8_t> &payload)
+    void GenericNack::GetPayload(std::vector<uint8_t> &payload) const
     {
         auto _nackCodeByte{static_cast<uint8_t>(mNackCode)};
         payload.insert(payload.begin(), _nackCodeByte);

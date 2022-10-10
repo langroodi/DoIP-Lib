@@ -16,7 +16,7 @@ namespace DoipLib
     {
     }
 
-    void Message::Serialize(std::vector<uint8_t> &serializedMessage)
+    void Message::Serialize(std::vector<uint8_t> &serializedMessage) const
     {
         GetPayload(serializedMessage);
 

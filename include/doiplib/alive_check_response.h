@@ -14,7 +14,7 @@ namespace DoipLib
         uint16_t mSourceAddress;
 
     protected:
-         void GetPayload(std::vector<uint8_t> &payload) override;
+         void GetPayload(std::vector<uint8_t> &payload) const override;
 
          virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
          

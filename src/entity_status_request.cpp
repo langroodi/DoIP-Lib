@@ -14,7 +14,7 @@ namespace DoipLib
     {
     }
 
-    void EntityStatusRequest::GetPayload(std::vector<uint8_t> &payload)
+    void EntityStatusRequest::GetPayload(std::vector<uint8_t> &payload) const
     {
         // The message contain no payload.
     }

@@ -32,7 +32,7 @@ namespace DoipLib
     {
     }
 
-    void DiagMessage::GetPayload(std::vector<uint8_t> &payload)
+    void DiagMessage::GetPayload(std::vector<uint8_t> &payload) const
     {
         payload.insert(payload.begin(), mUserData.cbegin(), mUserData.cend());
         Convert::ToByteVector<uint16_t>(mTargetAddress, payload);

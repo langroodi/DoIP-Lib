@@ -16,7 +16,7 @@ namespace DoipLib
     {
     }
 
-    void PowerModeResponse::GetPayload(std::vector<uint8_t> &payload)
+    void PowerModeResponse::GetPayload(std::vector<uint8_t> &payload) const
     {
         auto _powerModeByte{static_cast<uint8_t>(mPowerMode)};
         payload.insert(payload.begin(), _powerModeByte);

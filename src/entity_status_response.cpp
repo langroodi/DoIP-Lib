@@ -41,7 +41,7 @@ namespace DoipLib
     {
     }
 
-    void EntityStatusResponse::GetPayload(std::vector<uint8_t> &payload)
+    void EntityStatusResponse::GetPayload(std::vector<uint8_t> &payload) const
     {
         if (mHasMaxDataSize)
         {

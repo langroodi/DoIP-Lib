@@ -50,7 +50,7 @@ namespace DoipLib
     {
     }
 
-    void DiagMessageNack::GetPayload(std::vector<uint8_t> &payload)
+    void DiagMessageNack::GetPayload(std::vector<uint8_t> &payload) const
     {
         if (mHasPreviousMessage)
         {

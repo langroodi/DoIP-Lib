@@ -44,7 +44,7 @@ namespace DoipLib
     {
     }
 
-    void DiagMessageAck::GetPayload(std::vector<uint8_t> &payload)
+    void DiagMessageAck::GetPayload(std::vector<uint8_t> &payload) const
     {
         if (mHasPreviousMessage)
         {

@@ -14,7 +14,7 @@ namespace DoipLib
     {
     }
 
-    void PowerModeRequest::GetPayload(std::vector<uint8_t> &payload)
+    void PowerModeRequest::GetPayload(std::vector<uint8_t> &payload) const
     {
         // The message contain no payload.
     }

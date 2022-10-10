@@ -81,7 +81,7 @@ namespace DoipLib
     {
     }
 
-    void VehicleIdResponse::GetPayload(std::vector<uint8_t> &payload)
+    void VehicleIdResponse::GetPayload(std::vector<uint8_t> &payload) const
     {
         if (mUseVehicleIdSync)
         {
