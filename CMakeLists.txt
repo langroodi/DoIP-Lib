@@ -63,6 +63,7 @@ add_library(
   ${source_dir}/diag_message.cpp
   ${source_dir}/diag_message_ack.cpp
   ${source_dir}/diag_message_nack.cpp
+  ${source_dir}/doip_controller.cpp
 )
 
 target_include_directories(doip_lib
@@ -92,6 +93,7 @@ if(build_tests)
     ${test_dir}/diag_message_test.cpp
     ${test_dir}/diag_message_ack_test.cpp
     ${test_dir}/diag_message_nack_test.cpp
+    ${test_dir}/doip_controller_test.cpp
   )
 
   target_link_libraries(
