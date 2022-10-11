@@ -9,6 +9,9 @@ namespace DoipLib
     /// @see DoipController
     struct ControllerConfig
     {
+        /// @brief DoIP protocol version
+        uint8_t protocolVersion;
+
         /// @brief Maximum DoIP request payload length
         uint32_t doipMaxRequestBytes;
     };
