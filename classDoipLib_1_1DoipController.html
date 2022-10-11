@@ -109,6 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34314c56ea66407530b1d9dfa7f5d6a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1DoipController.html#a34314c56ea66407530b1d9dfa7f5d6a2">DoipController</a> (<a class="el" href="structDoipLib_1_1ControllerConfig.html">ControllerConfig</a> &amp;&amp;configuration) noexcept</td></tr>
 <tr class="memdesc:a34314c56ea66407530b1d9dfa7f5d6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classDoipLib_1_1DoipController.html#a34314c56ea66407530b1d9dfa7f5d6a2">More...</a><br /></td></tr>
 <tr class="separator:a34314c56ea66407530b1d9dfa7f5d6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64319a936ff65b041de9afd05e3ee7d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1DoipController.html#a64319a936ff65b041de9afd05e3ee7d5">Register</a> (PayloadType payloadType, <a class="el" href="classDoipLib_1_1MessageHandler.html">MessageHandler</a> *messageHandler)</td></tr>
+<tr class="memdesc:a64319a936ff65b041de9afd05e3ee7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a message handler to manage a specific payload type.  <a href="classDoipLib_1_1DoipController.html#a64319a936ff65b041de9afd05e3ee7d5">More...</a><br /></td></tr>
+<tr class="separator:a64319a936ff65b041de9afd05e3ee7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d68061e8874aaaa273d25bcd6369ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1DoipController.html#a24d68061e8874aaaa273d25bcd6369ad">TryHandle</a> (const std::vector&lt; uint8_t &gt; &amp;request, std::vector&lt; uint8_t &gt; &amp;response) const</td></tr>
+<tr class="memdesc:a24d68061e8874aaaa273d25bcd6369ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to handle a DoIP request.  <a href="classDoipLib_1_1DoipController.html#a24d68061e8874aaaa273d25bcd6369ad">More...</a><br /></td></tr>
+<tr class="separator:a24d68061e8874aaaa273d25bcd6369ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >DoIP controller to route and handle DoIP messages. </p>
@@ -144,6 +150,83 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64319a936ff65b041de9afd05e3ee7d5" name="a64319a936ff65b041de9afd05e3ee7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64319a936ff65b041de9afd05e3ee7d5">&#9670;&nbsp;</a></span>Register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoipLib::DoipController::Register </td>
+          <td>(</td>
+          <td class="paramtype">PayloadType&#160;</td>
+          <td class="paramname"><em>payloadType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDoipLib_1_1MessageHandler.html">MessageHandler</a> *&#160;</td>
+          <td class="paramname"><em>messageHandler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a message handler to manage a specific payload type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payloadType</td><td>Payload type to be managed via the handler </td></tr>
+    <tr><td class="paramname">messageHandler</td><td>Handler to manage the messages with a specific payload type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24d68061e8874aaaa273d25bcd6369ad" name="a24d68061e8874aaaa273d25bcd6369ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d68061e8874aaaa273d25bcd6369ad">&#9670;&nbsp;</a></span>TryHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DoipLib::DoipController::TryHandle </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to handle a DoIP request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>DoIP request byte vector </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">response</td><td>DoIP response byte vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the request is handled correctly, otherwise false </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In case of incorrect request handling, the passed response vector will be untouched. </dd></dl>
 
 </div>
 </div>

@@ -20,6 +20,7 @@ var namespaces_dup =
       [ "EntityStatusResponse", "classDoipLib_1_1EntityStatusResponse.html", "classDoipLib_1_1EntityStatusResponse" ],
       [ "GenericNack", "classDoipLib_1_1GenericNack.html", "classDoipLib_1_1GenericNack" ],
       [ "Message", "classDoipLib_1_1Message.html", "classDoipLib_1_1Message" ],
+      [ "MessageHandler", "classDoipLib_1_1MessageHandler.html", "classDoipLib_1_1MessageHandler" ],
       [ "PowerModeRequest", "classDoipLib_1_1PowerModeRequest.html", "classDoipLib_1_1PowerModeRequest" ],
       [ "PowerModeResponse", "classDoipLib_1_1PowerModeResponse.html", "classDoipLib_1_1PowerModeResponse" ],
       [ "RoutingActivationRequest", "classDoipLib_1_1RoutingActivationRequest.html", "classDoipLib_1_1RoutingActivationRequest" ],
