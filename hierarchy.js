@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "DoipLib::AnnouncementTimer", "classDoipLib_1_1AnnouncementTimer.html", null ],
     [ "DoipLib::ControllerConfig", "structDoipLib_1_1ControllerConfig.html", null ],
     [ "DoipLib::DoipController", "classDoipLib_1_1DoipController.html", null ],
     [ "DoipLib::Message", "classDoipLib_1_1Message.html", [

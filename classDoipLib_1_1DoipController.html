@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24d68061e8874aaaa273d25bcd6369ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1DoipController.html#a24d68061e8874aaaa273d25bcd6369ad">TryHandle</a> (const std::vector&lt; uint8_t &gt; &amp;request, std::vector&lt; uint8_t &gt; &amp;response) const</td></tr>
 <tr class="memdesc:a24d68061e8874aaaa273d25bcd6369ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to handle a DoIP request.  <a href="classDoipLib_1_1DoipController.html#a24d68061e8874aaaa273d25bcd6369ad">More...</a><br /></td></tr>
 <tr class="separator:a24d68061e8874aaaa273d25bcd6369ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12badcf931cf57e109f3ac445977f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1DoipController.html#ab12badcf931cf57e109f3ac445977f08">StartAnnoucement</a> (std::function&lt; void()&gt; &amp;&amp;callback)</td></tr>
+<tr class="memdesc:ab12badcf931cf57e109f3ac445977f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Re)start initial vehicle announcement  <a href="classDoipLib_1_1DoipController.html#ab12badcf931cf57e109f3ac445977f08">More...</a><br /></td></tr>
+<tr class="separator:ab12badcf931cf57e109f3ac445977f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >DoIP controller to route and handle DoIP messages. </p>
@@ -197,6 +200,33 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab12badcf931cf57e109f3ac445977f08" name="ab12badcf931cf57e109f3ac445977f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12badcf931cf57e109f3ac445977f08">&#9670;&nbsp;</a></span>StartAnnoucement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoipLib::DoipController::StartAnnoucement </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(Re)start initial vehicle announcement </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>Delegate to be invoked at each annoucement tick </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The function will block until the announcement process starts. </dd></dl>
 
 </div>
 </div>

@@ -10,6 +10,7 @@ var namespaces_dup =
       ] ],
       [ "AliveCheckRequest", "classDoipLib_1_1AliveCheckRequest.html", "classDoipLib_1_1AliveCheckRequest" ],
       [ "AliveCheckResponse", "classDoipLib_1_1AliveCheckResponse.html", "classDoipLib_1_1AliveCheckResponse" ],
+      [ "AnnouncementTimer", "classDoipLib_1_1AnnouncementTimer.html", "classDoipLib_1_1AnnouncementTimer" ],
       [ "ControllerConfig", "structDoipLib_1_1ControllerConfig.html", "structDoipLib_1_1ControllerConfig" ],
       [ "DiagMessage", "classDoipLib_1_1DiagMessage.html", "classDoipLib_1_1DiagMessage" ],
       [ "DiagMessageAck", "classDoipLib_1_1DiagMessageAck.html", "classDoipLib_1_1DiagMessageAck" ],
