@@ -2,6 +2,7 @@
 #define DOIP_CONTROLLER_H
 
 #include <map>
+#include "./announcement_timer.h"
 #include "./controller_config.h"
 #include "./message_handler.h"
 
@@ -13,6 +14,7 @@ namespace DoipLib
     private:
         const std::size_t cPayloadTypeOffset{2};
 
+        AnnouncementTimer mTimer;
         ControllerConfig mConfiguration;
         std::map<PayloadType, MessageHandler *> mHandlers;
 
@@ -37,6 +39,11 @@ namespace DoipLib
         bool TryHandle(
             const std::vector<uint8_t> &request,
             std::vector<uint8_t> &response) const;
+
+        /// @brief (Re)start initial vehicle announcement
+        /// @param callback Delegate to be invoked at each annoucement tick
+        /// @note The function will block until the announcement process starts.
+        void StartAnnoucement(std::function<void()> &&callback);
     };
 }
 

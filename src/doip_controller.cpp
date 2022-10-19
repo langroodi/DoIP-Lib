@@ -6,7 +6,8 @@
 namespace DoipLib
 {
     DoipController::DoipController(
-        ControllerConfig &&configuration) noexcept : mConfiguration{std::move(configuration)}
+        ControllerConfig &&configuration) noexcept : mConfiguration{std::move(configuration)},
+                                                     mTimer(mConfiguration.doIPInitialVehicleAnnouncementTime, mConfiguration.doIPVehicleAnnouncementInterval, mConfiguration.doIPVehicleAnnouncementCount)
     {
     }
 
@@ -66,5 +67,10 @@ namespace DoipLib
         }
 
         return _result;
+    }
+
+    void DoipController::StartAnnoucement(std::function<void()> &&callback)
+    {
+        mTimer.Start(std::move(callback));
     }
 }

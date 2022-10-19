@@ -14,6 +14,15 @@ namespace DoipLib
 
         /// @brief Maximum DoIP request payload length
         uint32_t doipMaxRequestBytes;
+
+        /// @brief Delay in seconds before starting the initial vehicle announcement
+        std::chrono::seconds doIPInitialVehicleAnnouncementTime;
+
+        /// @brief Number of initial vehicle annoucement interations
+        uint8_t doIPVehicleAnnouncementCount;
+
+        /// @brief Interval in seconds between each initial vehicle announcement
+        std::chrono::seconds doIPVehicleAnnouncementInterval;
     };
 }
 
