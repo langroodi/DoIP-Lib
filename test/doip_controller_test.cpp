@@ -13,6 +13,9 @@ namespace DoipLib
 
         const uint32_t cDoipMaxRequestBytes{8};
         const uint8_t cProtocolVersion{2};
+        const std::chrono::seconds cDelay{0};
+        const std::chrono::seconds cInterval{1};
+        uint8_t cCount{3};
 
         DummyMessageHandler mHandler;
 
@@ -51,6 +54,9 @@ namespace DoipLib
         ControllerConfig _config;
         _config.doipMaxRequestBytes = cDoipMaxRequestBytes;
         _config.protocolVersion = cProtocolVersion;
+        _config.doIPInitialVehicleAnnouncementTime = cDelay;
+        _config.doIPVehicleAnnouncementInterval = cInterval;
+        _config.doIPVehicleAnnouncementCount = cCount;
 
         DoipController _controller(std::move(_config));
         RegisterHandler(_controller);
@@ -76,6 +82,9 @@ namespace DoipLib
         ControllerConfig _config;
         _config.doipMaxRequestBytes = cDoipMaxRequestBytes;
         _config.protocolVersion = cProtocolVersion;
+        _config.doIPInitialVehicleAnnouncementTime = cDelay;
+        _config.doIPVehicleAnnouncementInterval = cInterval;
+        _config.doIPVehicleAnnouncementCount = cCount;
 
         DoipController _controller(std::move(_config));
         RegisterHandler(_controller);
@@ -98,6 +107,9 @@ namespace DoipLib
         ControllerConfig _config;
         _config.doipMaxRequestBytes = cDoipMaxRequestBytes;
         _config.protocolVersion = cProtocolVersion;
+        _config.doIPInitialVehicleAnnouncementTime = cDelay;
+        _config.doIPVehicleAnnouncementInterval = cInterval;
+        _config.doIPVehicleAnnouncementCount = cCount;
 
         DoipController _controller(std::move(_config));
         RegisterHandler(_controller);
@@ -120,6 +132,9 @@ namespace DoipLib
         ControllerConfig _config;
         _config.doipMaxRequestBytes = static_cast<uint32_t>(cPayload.size());
         _config.protocolVersion = cProtocolVersion;
+        _config.doIPInitialVehicleAnnouncementTime = cDelay;
+        _config.doIPVehicleAnnouncementInterval = cInterval;
+        _config.doIPVehicleAnnouncementCount = cCount;
 
         DoipController _controller(std::move(_config));
         RegisterHandler(_controller);
