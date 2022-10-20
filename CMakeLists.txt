@@ -94,8 +94,8 @@ if(build_tests)
     ${test_dir}/diag_message_test.cpp
     ${test_dir}/diag_message_ack_test.cpp
     ${test_dir}/diag_message_nack_test.cpp
-    ${test_dir}/announcement_timer_test.cpp
     ${test_dir}/doip_controller_test.cpp
+    ${test_dir}/announcement_timer_test.cpp
   )
 
   target_link_libraries(
