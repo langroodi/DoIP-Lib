@@ -14,8 +14,8 @@ namespace DoipLib
     private:
         const std::size_t cPayloadTypeOffset{2};
 
-        AnnouncementTimer mTimer;
         ControllerConfig mConfiguration;
+        AnnouncementTimer mTimer;
         std::map<PayloadType, MessageHandler *> mHandlers;
 
         void CreateGenericNack(
