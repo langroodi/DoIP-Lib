@@ -15,7 +15,7 @@ namespace DoipLib
 
     TEST(AnnouncementTimerTest, StartMethod)
     {
-        const std::chrono::seconds cDelay{1};
+        const std::chrono::seconds cDelay{0};
         const std::chrono::seconds cInterval{1};
         const uint8_t cExpectedResult{2};
 
