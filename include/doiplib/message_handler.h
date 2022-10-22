@@ -19,7 +19,7 @@ namespace DoipLib
         /// @return True if the request is handled correctly, otherwise false
         /// @note In case of incorrect request handling, the passed response vector will be untouched.
         virtual bool TryHandle(
-            const Message *request, std::vector<uint8_t> &response) = 0;
+            const Message *request, std::vector<uint8_t> &response) const = 0;
 
         virtual ~MessageHandler() noexcept = default;
     };

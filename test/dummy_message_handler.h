@@ -27,7 +27,7 @@ namespace DoipLib
         }
 
         virtual bool TryHandle(
-            const Message *request, std::vector<uint8_t> &response) override
+            const Message *request, std::vector<uint8_t> &response) const override
         {
             mResponse.Serialize(response);
             return true;

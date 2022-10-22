@@ -7,7 +7,7 @@ namespace DoipLib
 {
     const PayloadType VehicleIdResponse::cPayloadType;
     const std::size_t VehicleIdResponse::cVinSize;
-    constexpr std::size_t VehicleIdResponse::VehicleIdResponse::cIdSize;
+    constexpr std::size_t VehicleIdResponse::cIdSize;
 
     VehicleIdResponse::VehicleIdResponse() noexcept : Message(cPayloadType)
     {
