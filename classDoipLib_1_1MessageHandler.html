@@ -118,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7df83c46de1d5ce94980653b938afeb1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDoipLib_1_1Message.html">Message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1MessageHandler.html#a7df83c46de1d5ce94980653b938afeb1">GetMessage</a> ()=0</td></tr>
 <tr class="memdesc:a7df83c46de1d5ce94980653b938afeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an instance of the message for request handling.  <a href="classDoipLib_1_1MessageHandler.html#a7df83c46de1d5ce94980653b938afeb1">More...</a><br /></td></tr>
 <tr class="separator:a7df83c46de1d5ce94980653b938afeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36036223c336f7df781694cacc6420c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1MessageHandler.html#ad36036223c336f7df781694cacc6420c">TryHandle</a> (const <a class="el" href="classDoipLib_1_1Message.html">Message</a> *request, std::vector&lt; uint8_t &gt; &amp;response)=0</td></tr>
-<tr class="memdesc:ad36036223c336f7df781694cacc6420c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to handle a request.  <a href="classDoipLib_1_1MessageHandler.html#ad36036223c336f7df781694cacc6420c">More...</a><br /></td></tr>
-<tr class="separator:ad36036223c336f7df781694cacc6420c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92baa6ba5283d4e2ba0f879961218b54"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1MessageHandler.html#a92baa6ba5283d4e2ba0f879961218b54">TryHandle</a> (const <a class="el" href="classDoipLib_1_1Message.html">Message</a> *request, std::vector&lt; uint8_t &gt; &amp;response) const =0</td></tr>
+<tr class="memdesc:a92baa6ba5283d4e2ba0f879961218b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to handle a request.  <a href="classDoipLib_1_1MessageHandler.html#a92baa6ba5283d4e2ba0f879961218b54">More...</a><br /></td></tr>
+<tr class="separator:a92baa6ba5283d4e2ba0f879961218b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Callback wrapper to handle a DoIP message type at its reception. </p>
@@ -153,8 +153,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad36036223c336f7df781694cacc6420c" name="ad36036223c336f7df781694cacc6420c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad36036223c336f7df781694cacc6420c">&#9670;&nbsp;</a></span>TryHandle()</h2>
+<a id="a92baa6ba5283d4e2ba0f879961218b54" name="a92baa6ba5283d4e2ba0f879961218b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92baa6ba5283d4e2ba0f879961218b54">&#9670;&nbsp;</a></span>TryHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
