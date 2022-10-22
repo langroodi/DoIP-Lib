@@ -26,4 +26,10 @@ cmake --build build
 
 # To run the tests:
 cd build && ctest
-``` 
+```
+
+### Samples
+The library sample build is disabled by default. To be able to build the library with the sample, the first bash command introduced above should be modified as follows:
+```bash
+cmake -S . -B build -Dbuild_samples=ON
+```
