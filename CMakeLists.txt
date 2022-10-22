@@ -22,6 +22,7 @@ FetchContent_MakeAvailable(googletest)
 # Options:
 
 option(build_tests "Build all the tests." ON)
+option(build_samples "Build all the samples." OFF)
 
 ########################################################################
 #
@@ -39,6 +40,11 @@ set(source_dir
 
 set(test_dir
   "${PROJECT_SOURCE_DIR}/test")
+
+# Samples Directory
+
+set(sample_dir
+  "${PROJECT_SOURCE_DIR}/samples")
 
 ########################################################################
 
@@ -106,4 +112,17 @@ if(build_tests)
 
   include(GoogleTest)
   gtest_discover_tests(doip_lib_test)
+endif()
+
+if(build_samples)
+  add_executable(
+    doip_lib_sample
+    ${sample_dir}/vehicle_id_message_handler.cpp
+    ${sample_dir}/message_handling_sample.cpp
+  )
+
+  target_link_libraries(
+    doip_lib_sample
+    doip_lib
+  )
 endif()
