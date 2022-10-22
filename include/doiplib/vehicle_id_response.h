@@ -43,7 +43,7 @@ namespace DoipLib
         /// @param furtherAction Further action byte
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             const std::string &vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,
@@ -59,7 +59,7 @@ namespace DoipLib
         /// @param furtherAction Further action byte
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             std::string &&vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,
@@ -76,7 +76,7 @@ namespace DoipLib
         /// @param vinGidStatus VIN/GID synchronization status
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             const std::string &vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,
@@ -94,7 +94,7 @@ namespace DoipLib
         /// @param vinGidStatus VIN/GID synchronization status
         /// @throws std::out_of_range Throws if the given VIN is invalid
         VehicleIdResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             std::string &&vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,

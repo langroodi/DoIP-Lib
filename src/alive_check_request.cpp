@@ -10,7 +10,7 @@ namespace DoipLib
 
 
     AliveCheckRequest::AliveCheckRequest(
-        uint16_t protocolVersion) noexcept : Message(protocolVersion, cPayloadType)
+        uint8_t protocolVersion) noexcept : Message(protocolVersion, cPayloadType)
     {
     }
 

@@ -21,7 +21,7 @@ namespace DoipLib
         uint32_t mOemSpecificData;
 
         RoutingActivationResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t testerLogicalAddress,
             uint16_t entityLogicalAddress,
             RoutingActivationResponseType responseCode,
@@ -44,7 +44,7 @@ namespace DoipLib
         /// @param entityLogicalAddress Internal DoIP entity logical address
         /// @param responseCode Routing activation response code
         RoutingActivationResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t testerLogicalAddress,
             uint16_t entityLogicalAddress,
             RoutingActivationResponseType responseCode) noexcept;
@@ -56,7 +56,7 @@ namespace DoipLib
         /// @param responseCode Routing activation response code
         /// @param oemSpecificData OEM-specific request data
         RoutingActivationResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t testerLogicalAddress,
             uint16_t entityLogicalAddress,
             RoutingActivationResponseType responseCode,

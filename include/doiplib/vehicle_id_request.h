@@ -21,7 +21,7 @@ namespace DoipLib
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        explicit VehicleIdRequest(uint16_t protocolVersion) noexcept;
+        explicit VehicleIdRequest(uint8_t protocolVersion) noexcept;
     };
 }
 

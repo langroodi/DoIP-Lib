@@ -18,7 +18,7 @@ namespace DoipLib
 
     public:
         VehicleIdMessageHandler(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             std::string &&vin,
             uint16_t logicalAddress,
             std::array<uint8_t, cIdSize> eid,

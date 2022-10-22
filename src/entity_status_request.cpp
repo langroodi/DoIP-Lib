@@ -10,7 +10,7 @@ namespace DoipLib
 
 
     EntityStatusRequest::EntityStatusRequest(
-        uint16_t protocolVersion) noexcept : Message(protocolVersion, cPayloadType)
+        uint8_t protocolVersion) noexcept : Message(protocolVersion, cPayloadType)
     {
     }
 

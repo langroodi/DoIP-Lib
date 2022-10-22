@@ -21,7 +21,7 @@ namespace DoipLib
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        explicit AliveCheckRequest(uint16_t protocolVersion) noexcept;
+        explicit AliveCheckRequest(uint8_t protocolVersion) noexcept;
     };
 }
 

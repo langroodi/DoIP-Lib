@@ -25,7 +25,7 @@ namespace DoipLib
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param nackCode Negative acknowledgement code
-        GenericNack(uint16_t protocolVersion, GenericNackType nackCode) noexcept;
+        GenericNack(uint8_t protocolVersion, GenericNackType nackCode) noexcept;
 
         /// @brief Get NACK code
         /// @return Negative acknoweledgement code

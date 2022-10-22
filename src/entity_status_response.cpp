@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     EntityStatusResponse::EntityStatusResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         NodeType entityType,
         uint8_t maxOpenSockets,
         uint8_t currentlyOpenSocket,
@@ -25,7 +25,7 @@ namespace DoipLib
     }
 
     EntityStatusResponse::EntityStatusResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         NodeType entityType,
         uint8_t maxOpenSockets,
         uint8_t currentlyOpenSocket) noexcept : EntityStatusResponse(protocolVersion, entityType, maxOpenSockets, currentlyOpenSocket, false)
@@ -33,7 +33,7 @@ namespace DoipLib
     }
 
     EntityStatusResponse::EntityStatusResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         NodeType entityType,
         uint8_t maxOpenSockets,
         uint8_t currentlyOpenSocket,

@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     RoutingActivationRequest::RoutingActivationRequest(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t sourceAddress,
         uint8_t activationType,
         bool hasOemSpecificData,
@@ -23,14 +23,14 @@ namespace DoipLib
     }
 
     RoutingActivationRequest::RoutingActivationRequest(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t sourceAddress,
         uint8_t activationType) noexcept : RoutingActivationRequest(protocolVersion, sourceAddress, activationType, false)
     {
     }
 
     RoutingActivationRequest::RoutingActivationRequest(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t sourceAddress,
         uint8_t activationType,
         uint32_t oemSpecificData) noexcept : RoutingActivationRequest(protocolVersion, sourceAddress, activationType, true, oemSpecificData)

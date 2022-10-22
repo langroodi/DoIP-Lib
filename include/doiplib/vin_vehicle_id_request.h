@@ -28,13 +28,13 @@ namespace DoipLib
         /// @param protocolVersion DoIP ISO protocol version
         /// @param vin Vehicle ID number filter
         /// @throws std::out_of_range Throws if the given VIN is invalid
-        VinVehicleIdRequest(uint16_t protocolVersion, const std::string &vin);
+        VinVehicleIdRequest(uint8_t protocolVersion, const std::string &vin);
 
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
         /// @param vin Vehicle ID number filter
         /// @throws std::out_of_range Throws if the given VIN is invalid
-        VinVehicleIdRequest(uint16_t protocolVersion, std::string &&vin);
+        VinVehicleIdRequest(uint8_t protocolVersion, std::string &&vin);
 
         /// @brief Get VIN filter
         /// @return Vehicle ID number

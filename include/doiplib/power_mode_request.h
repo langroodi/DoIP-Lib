@@ -22,7 +22,7 @@ namespace DoipLib
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        explicit PowerModeRequest(uint16_t protocolVersion) noexcept;
+        explicit PowerModeRequest(uint8_t protocolVersion) noexcept;
     };
 }
 

@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     RoutingActivationResponse::RoutingActivationResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t testerLogicalAddress,
         uint16_t entityLogicalAddress,
         RoutingActivationResponseType responseCode,
@@ -25,7 +25,7 @@ namespace DoipLib
     }
 
     RoutingActivationResponse::RoutingActivationResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t testerLogicalAddress,
         uint16_t entityLogicalAddress,
         RoutingActivationResponseType responseCode) noexcept : RoutingActivationResponse(protocolVersion, testerLogicalAddress, entityLogicalAddress, responseCode, false)
@@ -33,7 +33,7 @@ namespace DoipLib
     }
 
     RoutingActivationResponse::RoutingActivationResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t testerLogicalAddress,
         uint16_t entityLogicalAddress,
         RoutingActivationResponseType responseCode,

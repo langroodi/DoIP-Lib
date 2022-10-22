@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     AliveCheckResponse::AliveCheckResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         uint16_t sourceAddress) noexcept : Message(protocolVersion, cPayloadType),
                                            mSourceAddress{sourceAddress}
     {

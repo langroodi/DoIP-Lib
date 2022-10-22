@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     GenericNack::GenericNack(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         GenericNackType nackCode) noexcept : Message(protocolVersion, cPayloadType),
                                       mNackCode{nackCode}
     {

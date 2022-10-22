@@ -20,7 +20,7 @@ namespace DoipLib
         uint32_t mMaxDataSize;
 
         EntityStatusResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             NodeType entityType,
             uint8_t maxOpenSockets,
             uint8_t currentlyOpenSocket,
@@ -43,7 +43,7 @@ namespace DoipLib
         /// @param maxOpenSockets Maximum number of concurrent open TCP sockets at the entity
         /// @param currentlyOpenSocket Current number of open TCP socket at the entity
         EntityStatusResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             NodeType entityType,
             uint8_t maxOpenSockets,
             uint8_t currentlyOpenSocket) noexcept;
@@ -55,7 +55,7 @@ namespace DoipLib
         /// @param currentlyOpenSocket Current number of open TCP socket at the entity
         /// @param maxDataSize Maximum processable request data size
         EntityStatusResponse(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             NodeType entityType,
             uint8_t maxOpenSockets,
             uint8_t currentlyOpenSocket,

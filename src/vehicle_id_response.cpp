@@ -14,7 +14,7 @@ namespace DoipLib
     }
 
     VehicleIdResponse::VehicleIdResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         const std::string &vin,
         uint16_t logicalAddress,
         std::array<uint8_t, VehicleIdResponse::cIdSize> eid,
@@ -30,7 +30,7 @@ namespace DoipLib
     }
 
     VehicleIdResponse::VehicleIdResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         std::string &&vin,
         uint16_t logicalAddress,
         std::array<uint8_t, VehicleIdResponse::cIdSize> eid,
@@ -46,7 +46,7 @@ namespace DoipLib
     }
 
     VehicleIdResponse::VehicleIdResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         const std::string &vin,
         uint16_t logicalAddress,
         std::array<uint8_t, VehicleIdResponse::cIdSize> eid,
@@ -64,7 +64,7 @@ namespace DoipLib
     }
 
     VehicleIdResponse::VehicleIdResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         std::string &&vin,
         uint16_t logicalAddress,
         std::array<uint8_t, VehicleIdResponse::cIdSize> eid,

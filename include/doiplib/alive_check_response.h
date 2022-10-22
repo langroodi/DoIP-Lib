@@ -25,7 +25,7 @@ namespace DoipLib
         /// @param protocolVersion DoIP ISO protocol version
         /// @param sourceAddress Tester logical address
         explicit AliveCheckResponse(
-            uint16_t protocolVersion, uint16_t sourceAddress) noexcept;
+            uint8_t protocolVersion, uint16_t sourceAddress) noexcept;
 
         /// @brief Get source address
         /// @return Tester logical address

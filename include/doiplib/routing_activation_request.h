@@ -19,7 +19,7 @@ namespace DoipLib
         uint32_t mOemSpecificData;
 
         RoutingActivationRequest(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t sourceAddress,
             uint8_t activationType,
             bool hasOemSpecificData,
@@ -40,7 +40,7 @@ namespace DoipLib
         /// @param sourceAddress External tester logical address
         /// @param activationType Routing activation type
         RoutingActivationRequest(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t sourceAddress,
             uint8_t activationType) noexcept;
 
@@ -50,7 +50,7 @@ namespace DoipLib
         /// @param activationType Routing activation type
         /// @param oemSpecificData OEM-specific request data
         RoutingActivationRequest(
-            uint16_t protocolVersion,
+            uint8_t protocolVersion,
             uint16_t sourceAddress,
             uint8_t activationType,
             uint32_t oemSpecificData) noexcept;

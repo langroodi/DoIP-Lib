@@ -11,7 +11,7 @@ namespace DoipLib
     }
 
     EidVehicleIdRequest::EidVehicleIdRequest(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         std::array<uint8_t, cEidSize> eid) : Message(protocolVersion, cPayloadType),
                                              mEid{eid}
     {

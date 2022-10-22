@@ -22,7 +22,7 @@ namespace DoipLib
         
         /// @brief Constructor
         /// @param protocolVersion DoIP ISO protocol version
-        explicit EntityStatusRequest(uint16_t protocolVersion) noexcept;
+        explicit EntityStatusRequest(uint8_t protocolVersion) noexcept;
     };
 }
 

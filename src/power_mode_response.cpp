@@ -10,7 +10,7 @@ namespace DoipLib
     }
 
     PowerModeResponse::PowerModeResponse(
-        uint16_t protocolVersion,
+        uint8_t protocolVersion,
         PowerModeType powerMode) noexcept : Message(protocolVersion, cPayloadType),
                                             mPowerMode{powerMode}
     {

@@ -27,7 +27,7 @@ namespace DoipLib
         /// @param protocolVersion DoIP ISO protocol version
         /// @param powerMode DoIP node current power mode
         explicit PowerModeResponse(
-            uint16_t protocolVersion, PowerModeType powerMode) noexcept;
+            uint8_t protocolVersion, PowerModeType powerMode) noexcept;
 
         /// @brief Get power mode
         /// @return DoIP node current power mode
