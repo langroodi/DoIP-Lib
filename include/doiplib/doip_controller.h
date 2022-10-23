@@ -24,7 +24,7 @@ namespace DoipLib
     public:
         /// @brief Constructor
         /// @param configuration Controller configurtation
-        DoipController(ControllerConfig &&configuration) noexcept;
+        DoipController(ControllerConfig &&configuration);
 
         /// @brief Register a message handler to manage a specific payload type
         /// @param payloadType Payload type to be managed via the handler

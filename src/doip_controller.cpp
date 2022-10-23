@@ -6,8 +6,8 @@
 namespace DoipLib
 {
     DoipController::DoipController(
-        ControllerConfig &&configuration) noexcept : mConfiguration{std::move(configuration)},
-                                                     mTimer(mConfiguration.doIPInitialVehicleAnnouncementTime, mConfiguration.doIPVehicleAnnouncementInterval, mConfiguration.doIPVehicleAnnouncementCount)
+        ControllerConfig &&configuration) : mConfiguration{std::move(configuration)},
+                                            mTimer(mConfiguration.doIPInitialVehicleAnnouncementTime, mConfiguration.doIPVehicleAnnouncementInterval, mConfiguration.doIPVehicleAnnouncementCount)
     {
     }
 
