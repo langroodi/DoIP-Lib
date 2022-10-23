@@ -1,0 +1,2352 @@
+Start testing: Oct 23 08:14 UTC
+----------------------------------------------------------
+1/87 Testing: ConvertTest.ShortToByteVector
+1/87 Test: ConvertTest.ShortToByteVector
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ShortToByteVector" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ShortToByteVector" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ShortToByteVector
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ShortToByteVector
+[       OK ] ConvertTest.ShortToByteVector (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ShortToByteVector" end time: Oct 23 08:14 UTC
+"ConvertTest.ShortToByteVector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/87 Testing: ConvertTest.IntegerToByteVector
+2/87 Test: ConvertTest.IntegerToByteVector
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.IntegerToByteVector" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.IntegerToByteVector" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.IntegerToByteVector
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.IntegerToByteVector
+[       OK ] ConvertTest.IntegerToByteVector (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.IntegerToByteVector" end time: Oct 23 08:14 UTC
+"ConvertTest.IntegerToByteVector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/87 Testing: ConvertTest.ByteVectorToShort
+3/87 Test: ConvertTest.ByteVectorToShort
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteVectorToShort" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteVectorToShort" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteVectorToShort
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteVectorToShort
+[       OK ] ConvertTest.ByteVectorToShort (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteVectorToShort" end time: Oct 23 08:14 UTC
+"ConvertTest.ByteVectorToShort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/87 Testing: ConvertTest.ByteVectorToInteger
+4/87 Test: ConvertTest.ByteVectorToInteger
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteVectorToInteger" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteVectorToInteger" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteVectorToInteger
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteVectorToInteger
+[       OK ] ConvertTest.ByteVectorToInteger (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteVectorToInteger" end time: Oct 23 08:14 UTC
+"ConvertTest.ByteVectorToInteger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/87 Testing: ConvertTest.ByteVectorToEnum
+5/87 Test: ConvertTest.ByteVectorToEnum
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteVectorToEnum" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteVectorToEnum" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteVectorToEnum
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteVectorToEnum
+[       OK ] ConvertTest.ByteVectorToEnum (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteVectorToEnum" end time: Oct 23 08:14 UTC
+"ConvertTest.ByteVectorToEnum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/87 Testing: ConvertTest.ByteVectorToByteArray
+6/87 Test: ConvertTest.ByteVectorToByteArray
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteVectorToByteArray" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteVectorToByteArray" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteVectorToByteArray
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteVectorToByteArray
+[       OK ] ConvertTest.ByteVectorToByteArray (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteVectorToByteArray" end time: Oct 23 08:14 UTC
+"ConvertTest.ByteVectorToByteArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/87 Testing: ConvertTest.ByteVectorToString
+7/87 Test: ConvertTest.ByteVectorToString
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=ConvertTest.ByteVectorToString" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"ConvertTest.ByteVectorToString" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConvertTest.ByteVectorToString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConvertTest
+[ RUN      ] ConvertTest.ByteVectorToString
+[       OK ] ConvertTest.ByteVectorToString (0 ms)
+[----------] 1 test from ConvertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConvertTest.ByteVectorToString" end time: Oct 23 08:14 UTC
+"ConvertTest.ByteVectorToString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/87 Testing: MessageTest.Serialization
+8/87 Test: MessageTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.Serialization
+[       OK ] MessageTest.Serialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.Serialization" end time: Oct 23 08:14 UTC
+"MessageTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/87 Testing: MessageTest.ValidDeserialization
+9/87 Test: MessageTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.ValidDeserialization
+[       OK ] MessageTest.ValidDeserialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"MessageTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/87 Testing: MessageTest.InvalidHeaderDeserialization
+10/87 Test: MessageTest.InvalidHeaderDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.InvalidHeaderDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.InvalidHeaderDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.InvalidHeaderDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.InvalidHeaderDeserialization
+[       OK ] MessageTest.InvalidHeaderDeserialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.InvalidHeaderDeserialization" end time: Oct 23 08:14 UTC
+"MessageTest.InvalidHeaderDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/87 Testing: MessageTest.InvalidVersionDeserialization
+11/87 Test: MessageTest.InvalidVersionDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.InvalidVersionDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.InvalidVersionDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.InvalidVersionDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.InvalidVersionDeserialization
+[       OK ] MessageTest.InvalidVersionDeserialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.InvalidVersionDeserialization" end time: Oct 23 08:14 UTC
+"MessageTest.InvalidVersionDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/87 Testing: MessageTest.InvalidTypeDeserialization
+12/87 Test: MessageTest.InvalidTypeDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.InvalidTypeDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.InvalidTypeDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.InvalidTypeDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.InvalidTypeDeserialization
+[       OK ] MessageTest.InvalidTypeDeserialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.InvalidTypeDeserialization" end time: Oct 23 08:14 UTC
+"MessageTest.InvalidTypeDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/87 Testing: MessageTest.InvalidLengthDeserialization
+13/87 Test: MessageTest.InvalidLengthDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.InvalidLengthDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.InvalidLengthDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.InvalidLengthDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.InvalidLengthDeserialization
+[       OK ] MessageTest.InvalidLengthDeserialization (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.InvalidLengthDeserialization" end time: Oct 23 08:14 UTC
+"MessageTest.InvalidLengthDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/87 Testing: MessageTest.ValidPayloadTypeExtraction
+14/87 Test: MessageTest.ValidPayloadTypeExtraction
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.ValidPayloadTypeExtraction" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.ValidPayloadTypeExtraction" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.ValidPayloadTypeExtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.ValidPayloadTypeExtraction
+[       OK ] MessageTest.ValidPayloadTypeExtraction (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.ValidPayloadTypeExtraction" end time: Oct 23 08:14 UTC
+"MessageTest.ValidPayloadTypeExtraction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/87 Testing: MessageTest.InvalidPayloadTypeExtraction
+15/87 Test: MessageTest.InvalidPayloadTypeExtraction
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=MessageTest.InvalidPayloadTypeExtraction" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"MessageTest.InvalidPayloadTypeExtraction" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MessageTest.InvalidPayloadTypeExtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MessageTest
+[ RUN      ] MessageTest.InvalidPayloadTypeExtraction
+[       OK ] MessageTest.InvalidPayloadTypeExtraction (0 ms)
+[----------] 1 test from MessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MessageTest.InvalidPayloadTypeExtraction" end time: Oct 23 08:14 UTC
+"MessageTest.InvalidPayloadTypeExtraction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/87 Testing: GenericNackTest.Serialization
+16/87 Test: GenericNackTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.Serialization
+[       OK ] GenericNackTest.Serialization (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.Serialization" end time: Oct 23 08:14 UTC
+"GenericNackTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/87 Testing: GenericNackTest.ValidDeserialization
+17/87 Test: GenericNackTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.ValidDeserialization
+[       OK ] GenericNackTest.ValidDeserialization (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"GenericNackTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/87 Testing: GenericNackTest.InvalidDeserialization
+18/87 Test: GenericNackTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=GenericNackTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"GenericNackTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GenericNackTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GenericNackTest
+[ RUN      ] GenericNackTest.InvalidDeserialization
+[       OK ] GenericNackTest.InvalidDeserialization (0 ms)
+[----------] 1 test from GenericNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GenericNackTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"GenericNackTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/87 Testing: VehicleIdRequestTest.ValidDeserialization
+19/87 Test: VehicleIdRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdRequestTest
+[ RUN      ] VehicleIdRequestTest.ValidDeserialization
+[       OK ] VehicleIdRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from VehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"VehicleIdRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/87 Testing: VehicleIdRequestTest.InvalidDeserialization
+20/87 Test: VehicleIdRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdRequestTest
+[ RUN      ] VehicleIdRequestTest.InvalidDeserialization
+[       OK ] VehicleIdRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from VehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"VehicleIdRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/87 Testing: EidVehicleIdRequestTest.Serialization
+21/87 Test: EidVehicleIdRequestTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EidVehicleIdRequestTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EidVehicleIdRequestTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EidVehicleIdRequestTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EidVehicleIdRequestTest
+[ RUN      ] EidVehicleIdRequestTest.Serialization
+[       OK ] EidVehicleIdRequestTest.Serialization (0 ms)
+[----------] 1 test from EidVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EidVehicleIdRequestTest.Serialization" end time: Oct 23 08:14 UTC
+"EidVehicleIdRequestTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/87 Testing: EidVehicleIdRequestTest.ValidDeserialization
+22/87 Test: EidVehicleIdRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EidVehicleIdRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EidVehicleIdRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EidVehicleIdRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EidVehicleIdRequestTest
+[ RUN      ] EidVehicleIdRequestTest.ValidDeserialization
+[       OK ] EidVehicleIdRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from EidVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EidVehicleIdRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"EidVehicleIdRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/87 Testing: EidVehicleIdRequestTest.InvalidDeserialization
+23/87 Test: EidVehicleIdRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EidVehicleIdRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EidVehicleIdRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EidVehicleIdRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EidVehicleIdRequestTest
+[ RUN      ] EidVehicleIdRequestTest.InvalidDeserialization
+[       OK ] EidVehicleIdRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from EidVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EidVehicleIdRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"EidVehicleIdRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/87 Testing: VinVehicleIdRequestTest.Constructor
+24/87 Test: VinVehicleIdRequestTest.Constructor
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VinVehicleIdRequestTest.Constructor" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VinVehicleIdRequestTest.Constructor" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VinVehicleIdRequestTest.Constructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VinVehicleIdRequestTest
+[ RUN      ] VinVehicleIdRequestTest.Constructor
+[       OK ] VinVehicleIdRequestTest.Constructor (0 ms)
+[----------] 1 test from VinVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VinVehicleIdRequestTest.Constructor" end time: Oct 23 08:14 UTC
+"VinVehicleIdRequestTest.Constructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/87 Testing: VinVehicleIdRequestTest.Serialization
+25/87 Test: VinVehicleIdRequestTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VinVehicleIdRequestTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VinVehicleIdRequestTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VinVehicleIdRequestTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VinVehicleIdRequestTest
+[ RUN      ] VinVehicleIdRequestTest.Serialization
+[       OK ] VinVehicleIdRequestTest.Serialization (0 ms)
+[----------] 1 test from VinVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VinVehicleIdRequestTest.Serialization" end time: Oct 23 08:14 UTC
+"VinVehicleIdRequestTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/87 Testing: VinVehicleIdRequestTest.ValidDeserialization
+26/87 Test: VinVehicleIdRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VinVehicleIdRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VinVehicleIdRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VinVehicleIdRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VinVehicleIdRequestTest
+[ RUN      ] VinVehicleIdRequestTest.ValidDeserialization
+[       OK ] VinVehicleIdRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from VinVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VinVehicleIdRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"VinVehicleIdRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/87 Testing: VinVehicleIdRequestTest.InvalidDeserialization
+27/87 Test: VinVehicleIdRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VinVehicleIdRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VinVehicleIdRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VinVehicleIdRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VinVehicleIdRequestTest
+[ RUN      ] VinVehicleIdRequestTest.InvalidDeserialization
+[       OK ] VinVehicleIdRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from VinVehicleIdRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VinVehicleIdRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"VinVehicleIdRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/87 Testing: VehicleIdResponeTest.Constructor
+28/87 Test: VehicleIdResponeTest.Constructor
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.Constructor" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.Constructor" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.Constructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.Constructor
+[       OK ] VehicleIdResponeTest.Constructor (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.Constructor" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.Constructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/87 Testing: VehicleIdResponeTest.SerializationWithoutSync
+29/87 Test: VehicleIdResponeTest.SerializationWithoutSync
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.SerializationWithoutSync" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.SerializationWithoutSync" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.SerializationWithoutSync
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.SerializationWithoutSync
+[       OK ] VehicleIdResponeTest.SerializationWithoutSync (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.SerializationWithoutSync" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.SerializationWithoutSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/87 Testing: VehicleIdResponeTest.SerializationUsingSync
+30/87 Test: VehicleIdResponeTest.SerializationUsingSync
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.SerializationUsingSync" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.SerializationUsingSync" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.SerializationUsingSync
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.SerializationUsingSync
+[       OK ] VehicleIdResponeTest.SerializationUsingSync (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.SerializationUsingSync" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.SerializationUsingSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/87 Testing: VehicleIdResponeTest.DeserializationWithoutSync
+31/87 Test: VehicleIdResponeTest.DeserializationWithoutSync
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.DeserializationWithoutSync" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.DeserializationWithoutSync" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.DeserializationWithoutSync
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.DeserializationWithoutSync
+[       OK ] VehicleIdResponeTest.DeserializationWithoutSync (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.DeserializationWithoutSync" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.DeserializationWithoutSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/87 Testing: VehicleIdResponeTest.DeserializationUsingSync
+32/87 Test: VehicleIdResponeTest.DeserializationUsingSync
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.DeserializationUsingSync" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.DeserializationUsingSync" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.DeserializationUsingSync
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.DeserializationUsingSync
+[       OK ] VehicleIdResponeTest.DeserializationUsingSync (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.DeserializationUsingSync" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.DeserializationUsingSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/87 Testing: VehicleIdResponeTest.InvalidDeserialization
+33/87 Test: VehicleIdResponeTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=VehicleIdResponeTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"VehicleIdResponeTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleIdResponeTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleIdResponeTest
+[ RUN      ] VehicleIdResponeTest.InvalidDeserialization
+[       OK ] VehicleIdResponeTest.InvalidDeserialization (0 ms)
+[----------] 1 test from VehicleIdResponeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleIdResponeTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"VehicleIdResponeTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/87 Testing: RoutingActivationRequestTest.SerializationWithoutOemData
+34/87 Test: RoutingActivationRequestTest.SerializationWithoutOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.SerializationWithoutOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.SerializationWithoutOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.SerializationWithoutOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.SerializationWithoutOemData
+[       OK ] RoutingActivationRequestTest.SerializationWithoutOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.SerializationWithoutOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.SerializationWithoutOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/87 Testing: RoutingActivationRequestTest.SerializationUsingOemData
+35/87 Test: RoutingActivationRequestTest.SerializationUsingOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.SerializationUsingOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.SerializationUsingOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.SerializationUsingOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.SerializationUsingOemData
+[       OK ] RoutingActivationRequestTest.SerializationUsingOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.SerializationUsingOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.SerializationUsingOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/87 Testing: RoutingActivationRequestTest.ValidDeserializationWithoutOemData
+36/87 Test: RoutingActivationRequestTest.ValidDeserializationWithoutOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.ValidDeserializationWithoutOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.ValidDeserializationWithoutOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.ValidDeserializationWithoutOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.ValidDeserializationWithoutOemData
+[       OK ] RoutingActivationRequestTest.ValidDeserializationWithoutOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.ValidDeserializationWithoutOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.ValidDeserializationWithoutOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/87 Testing: RoutingActivationRequestTest.ValidDeserializationUsingOemData
+37/87 Test: RoutingActivationRequestTest.ValidDeserializationUsingOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.ValidDeserializationUsingOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.ValidDeserializationUsingOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.ValidDeserializationUsingOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.ValidDeserializationUsingOemData
+[       OK ] RoutingActivationRequestTest.ValidDeserializationUsingOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.ValidDeserializationUsingOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.ValidDeserializationUsingOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/87 Testing: RoutingActivationRequestTest.InvalidSizeDeserialization
+38/87 Test: RoutingActivationRequestTest.InvalidSizeDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.InvalidSizeDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.InvalidSizeDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.InvalidSizeDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.InvalidSizeDeserialization
+[       OK ] RoutingActivationRequestTest.InvalidSizeDeserialization (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.InvalidSizeDeserialization" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.InvalidSizeDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/87 Testing: RoutingActivationRequestTest.InvalidDeserializationWithoutOemData
+39/87 Test: RoutingActivationRequestTest.InvalidDeserializationWithoutOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.InvalidDeserializationWithoutOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.InvalidDeserializationWithoutOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.InvalidDeserializationWithoutOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.InvalidDeserializationWithoutOemData
+[       OK ] RoutingActivationRequestTest.InvalidDeserializationWithoutOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.InvalidDeserializationWithoutOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.InvalidDeserializationWithoutOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/87 Testing: RoutingActivationRequestTest.InvalidDeserializationUsingOemData
+40/87 Test: RoutingActivationRequestTest.InvalidDeserializationUsingOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationRequestTest.InvalidDeserializationUsingOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationRequestTest.InvalidDeserializationUsingOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationRequestTest.InvalidDeserializationUsingOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationRequestTest
+[ RUN      ] RoutingActivationRequestTest.InvalidDeserializationUsingOemData
+[       OK ] RoutingActivationRequestTest.InvalidDeserializationUsingOemData (0 ms)
+[----------] 1 test from RoutingActivationRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationRequestTest.InvalidDeserializationUsingOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationRequestTest.InvalidDeserializationUsingOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/87 Testing: RoutingActivationResponseTest.SerializationWithoutOemData
+41/87 Test: RoutingActivationResponseTest.SerializationWithoutOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationResponseTest.SerializationWithoutOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationResponseTest.SerializationWithoutOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationResponseTest.SerializationWithoutOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationResponseTest
+[ RUN      ] RoutingActivationResponseTest.SerializationWithoutOemData
+[       OK ] RoutingActivationResponseTest.SerializationWithoutOemData (0 ms)
+[----------] 1 test from RoutingActivationResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationResponseTest.SerializationWithoutOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationResponseTest.SerializationWithoutOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/87 Testing: RoutingActivationResponseTest.SerializationUsingOemData
+42/87 Test: RoutingActivationResponseTest.SerializationUsingOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationResponseTest.SerializationUsingOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationResponseTest.SerializationUsingOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationResponseTest.SerializationUsingOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationResponseTest
+[ RUN      ] RoutingActivationResponseTest.SerializationUsingOemData
+[       OK ] RoutingActivationResponseTest.SerializationUsingOemData (0 ms)
+[----------] 1 test from RoutingActivationResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationResponseTest.SerializationUsingOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationResponseTest.SerializationUsingOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/87 Testing: RoutingActivationResponseTest.DeserializationWithoutOemData
+43/87 Test: RoutingActivationResponseTest.DeserializationWithoutOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationResponseTest.DeserializationWithoutOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationResponseTest.DeserializationWithoutOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationResponseTest.DeserializationWithoutOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationResponseTest
+[ RUN      ] RoutingActivationResponseTest.DeserializationWithoutOemData
+[       OK ] RoutingActivationResponseTest.DeserializationWithoutOemData (0 ms)
+[----------] 1 test from RoutingActivationResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationResponseTest.DeserializationWithoutOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationResponseTest.DeserializationWithoutOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/87 Testing: RoutingActivationResponseTest.DeserializationUsingOemData
+44/87 Test: RoutingActivationResponseTest.DeserializationUsingOemData
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationResponseTest.DeserializationUsingOemData" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationResponseTest.DeserializationUsingOemData" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationResponseTest.DeserializationUsingOemData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationResponseTest
+[ RUN      ] RoutingActivationResponseTest.DeserializationUsingOemData
+[       OK ] RoutingActivationResponseTest.DeserializationUsingOemData (0 ms)
+[----------] 1 test from RoutingActivationResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationResponseTest.DeserializationUsingOemData" end time: Oct 23 08:14 UTC
+"RoutingActivationResponseTest.DeserializationUsingOemData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/87 Testing: RoutingActivationResponseTest.InvalidDeserialization
+45/87 Test: RoutingActivationResponseTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=RoutingActivationResponseTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"RoutingActivationResponseTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RoutingActivationResponseTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutingActivationResponseTest
+[ RUN      ] RoutingActivationResponseTest.InvalidDeserialization
+[       OK ] RoutingActivationResponseTest.InvalidDeserialization (0 ms)
+[----------] 1 test from RoutingActivationResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutingActivationResponseTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"RoutingActivationResponseTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/87 Testing: AliveCheckRequestTest.ValidDeserialization
+46/87 Test: AliveCheckRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AliveCheckRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AliveCheckRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AliveCheckRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AliveCheckRequestTest
+[ RUN      ] AliveCheckRequestTest.ValidDeserialization
+[       OK ] AliveCheckRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from AliveCheckRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AliveCheckRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"AliveCheckRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/87 Testing: AliveCheckRequestTest.InvalidDeserialization
+47/87 Test: AliveCheckRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AliveCheckRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AliveCheckRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AliveCheckRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AliveCheckRequestTest
+[ RUN      ] AliveCheckRequestTest.InvalidDeserialization
+[       OK ] AliveCheckRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from AliveCheckRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AliveCheckRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"AliveCheckRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/87 Testing: AliveCheckResponseTest.Serialization
+48/87 Test: AliveCheckResponseTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AliveCheckResponseTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AliveCheckResponseTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AliveCheckResponseTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AliveCheckResponseTest
+[ RUN      ] AliveCheckResponseTest.Serialization
+[       OK ] AliveCheckResponseTest.Serialization (0 ms)
+[----------] 1 test from AliveCheckResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AliveCheckResponseTest.Serialization" end time: Oct 23 08:14 UTC
+"AliveCheckResponseTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/87 Testing: AliveCheckResponseTest.ValidDeserialization
+49/87 Test: AliveCheckResponseTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AliveCheckResponseTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AliveCheckResponseTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AliveCheckResponseTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AliveCheckResponseTest
+[ RUN      ] AliveCheckResponseTest.ValidDeserialization
+[       OK ] AliveCheckResponseTest.ValidDeserialization (0 ms)
+[----------] 1 test from AliveCheckResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AliveCheckResponseTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"AliveCheckResponseTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/87 Testing: AliveCheckResponseTest.InvalidDeserialization
+50/87 Test: AliveCheckResponseTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AliveCheckResponseTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AliveCheckResponseTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AliveCheckResponseTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AliveCheckResponseTest
+[ RUN      ] AliveCheckResponseTest.InvalidDeserialization
+[       OK ] AliveCheckResponseTest.InvalidDeserialization (0 ms)
+[----------] 1 test from AliveCheckResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AliveCheckResponseTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"AliveCheckResponseTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/87 Testing: PowerModeRequestTest.ValidDeserialization
+51/87 Test: PowerModeRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=PowerModeRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"PowerModeRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PowerModeRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PowerModeRequestTest
+[ RUN      ] PowerModeRequestTest.ValidDeserialization
+[       OK ] PowerModeRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from PowerModeRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PowerModeRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"PowerModeRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/87 Testing: PowerModeRequestTest.InvalidDeserialization
+52/87 Test: PowerModeRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=PowerModeRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"PowerModeRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PowerModeRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PowerModeRequestTest
+[ RUN      ] PowerModeRequestTest.InvalidDeserialization
+[       OK ] PowerModeRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from PowerModeRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PowerModeRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"PowerModeRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/87 Testing: PowerModeResponseTest.Serialization
+53/87 Test: PowerModeResponseTest.Serialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=PowerModeResponseTest.Serialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"PowerModeResponseTest.Serialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PowerModeResponseTest.Serialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PowerModeResponseTest
+[ RUN      ] PowerModeResponseTest.Serialization
+[       OK ] PowerModeResponseTest.Serialization (0 ms)
+[----------] 1 test from PowerModeResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PowerModeResponseTest.Serialization" end time: Oct 23 08:14 UTC
+"PowerModeResponseTest.Serialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/87 Testing: PowerModeResponseTest.ValidDeserialization
+54/87 Test: PowerModeResponseTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=PowerModeResponseTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"PowerModeResponseTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PowerModeResponseTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PowerModeResponseTest
+[ RUN      ] PowerModeResponseTest.ValidDeserialization
+[       OK ] PowerModeResponseTest.ValidDeserialization (0 ms)
+[----------] 1 test from PowerModeResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PowerModeResponseTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"PowerModeResponseTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/87 Testing: PowerModeResponseTest.InvalidDeserialization
+55/87 Test: PowerModeResponseTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=PowerModeResponseTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"PowerModeResponseTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PowerModeResponseTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PowerModeResponseTest
+[ RUN      ] PowerModeResponseTest.InvalidDeserialization
+[       OK ] PowerModeResponseTest.InvalidDeserialization (0 ms)
+[----------] 1 test from PowerModeResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PowerModeResponseTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"PowerModeResponseTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/87 Testing: EntityStatusRequestTest.ValidDeserialization
+56/87 Test: EntityStatusRequestTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusRequestTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusRequestTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusRequestTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusRequestTest
+[ RUN      ] EntityStatusRequestTest.ValidDeserialization
+[       OK ] EntityStatusRequestTest.ValidDeserialization (0 ms)
+[----------] 1 test from EntityStatusRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusRequestTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"EntityStatusRequestTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/87 Testing: EntityStatusRequestTest.InvalidDeserialization
+57/87 Test: EntityStatusRequestTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusRequestTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusRequestTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusRequestTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusRequestTest
+[ RUN      ] EntityStatusRequestTest.InvalidDeserialization
+[       OK ] EntityStatusRequestTest.InvalidDeserialization (0 ms)
+[----------] 1 test from EntityStatusRequestTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusRequestTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"EntityStatusRequestTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/87 Testing: EntityStatusResponseTest.SerializationWithoutMaxSize
+58/87 Test: EntityStatusResponseTest.SerializationWithoutMaxSize
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusResponseTest.SerializationWithoutMaxSize" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusResponseTest.SerializationWithoutMaxSize" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusResponseTest.SerializationWithoutMaxSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusResponseTest
+[ RUN      ] EntityStatusResponseTest.SerializationWithoutMaxSize
+[       OK ] EntityStatusResponseTest.SerializationWithoutMaxSize (0 ms)
+[----------] 1 test from EntityStatusResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusResponseTest.SerializationWithoutMaxSize" end time: Oct 23 08:14 UTC
+"EntityStatusResponseTest.SerializationWithoutMaxSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/87 Testing: EntityStatusResponseTest.SerializationUsingMaxSize
+59/87 Test: EntityStatusResponseTest.SerializationUsingMaxSize
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusResponseTest.SerializationUsingMaxSize" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusResponseTest.SerializationUsingMaxSize" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusResponseTest.SerializationUsingMaxSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusResponseTest
+[ RUN      ] EntityStatusResponseTest.SerializationUsingMaxSize
+[       OK ] EntityStatusResponseTest.SerializationUsingMaxSize (0 ms)
+[----------] 1 test from EntityStatusResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusResponseTest.SerializationUsingMaxSize" end time: Oct 23 08:14 UTC
+"EntityStatusResponseTest.SerializationUsingMaxSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/87 Testing: EntityStatusResponseTest.DeserializationWithoutMaxSize
+60/87 Test: EntityStatusResponseTest.DeserializationWithoutMaxSize
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusResponseTest.DeserializationWithoutMaxSize" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusResponseTest.DeserializationWithoutMaxSize" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusResponseTest.DeserializationWithoutMaxSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusResponseTest
+[ RUN      ] EntityStatusResponseTest.DeserializationWithoutMaxSize
+[       OK ] EntityStatusResponseTest.DeserializationWithoutMaxSize (0 ms)
+[----------] 1 test from EntityStatusResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusResponseTest.DeserializationWithoutMaxSize" end time: Oct 23 08:14 UTC
+"EntityStatusResponseTest.DeserializationWithoutMaxSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/87 Testing: EntityStatusResponseTest.DeserializationUsingMaxSize
+61/87 Test: EntityStatusResponseTest.DeserializationUsingMaxSize
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusResponseTest.DeserializationUsingMaxSize" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusResponseTest.DeserializationUsingMaxSize" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusResponseTest.DeserializationUsingMaxSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusResponseTest
+[ RUN      ] EntityStatusResponseTest.DeserializationUsingMaxSize
+[       OK ] EntityStatusResponseTest.DeserializationUsingMaxSize (0 ms)
+[----------] 1 test from EntityStatusResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusResponseTest.DeserializationUsingMaxSize" end time: Oct 23 08:14 UTC
+"EntityStatusResponseTest.DeserializationUsingMaxSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/87 Testing: EntityStatusResponseTest.InvalidDeserialization
+62/87 Test: EntityStatusResponseTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=EntityStatusResponseTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"EntityStatusResponseTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EntityStatusResponseTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EntityStatusResponseTest
+[ RUN      ] EntityStatusResponseTest.InvalidDeserialization
+[       OK ] EntityStatusResponseTest.InvalidDeserialization (0 ms)
+[----------] 1 test from EntityStatusResponseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EntityStatusResponseTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"EntityStatusResponseTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/87 Testing: DiagMessageTest.SerializationWithCopyCtor
+63/87 Test: DiagMessageTest.SerializationWithCopyCtor
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageTest.SerializationWithCopyCtor" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageTest.SerializationWithCopyCtor" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageTest.SerializationWithCopyCtor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageTest
+[ RUN      ] DiagMessageTest.SerializationWithCopyCtor
+[       OK ] DiagMessageTest.SerializationWithCopyCtor (0 ms)
+[----------] 1 test from DiagMessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageTest.SerializationWithCopyCtor" end time: Oct 23 08:14 UTC
+"DiagMessageTest.SerializationWithCopyCtor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/87 Testing: DiagMessageTest.SerializationWithMoveCtor
+64/87 Test: DiagMessageTest.SerializationWithMoveCtor
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageTest.SerializationWithMoveCtor" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageTest.SerializationWithMoveCtor" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageTest.SerializationWithMoveCtor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageTest
+[ RUN      ] DiagMessageTest.SerializationWithMoveCtor
+[       OK ] DiagMessageTest.SerializationWithMoveCtor (0 ms)
+[----------] 1 test from DiagMessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageTest.SerializationWithMoveCtor" end time: Oct 23 08:14 UTC
+"DiagMessageTest.SerializationWithMoveCtor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/87 Testing: DiagMessageTest.ValidDeserialization
+65/87 Test: DiagMessageTest.ValidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageTest.ValidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageTest.ValidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageTest.ValidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageTest
+[ RUN      ] DiagMessageTest.ValidDeserialization
+[       OK ] DiagMessageTest.ValidDeserialization (0 ms)
+[----------] 1 test from DiagMessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageTest.ValidDeserialization" end time: Oct 23 08:14 UTC
+"DiagMessageTest.ValidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/87 Testing: DiagMessageTest.InvalidDeserialization
+66/87 Test: DiagMessageTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageTest
+[ RUN      ] DiagMessageTest.InvalidDeserialization
+[       OK ] DiagMessageTest.InvalidDeserialization (0 ms)
+[----------] 1 test from DiagMessageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"DiagMessageTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/87 Testing: DiagMessageAckTest.SerializationWithoutPreviousMessage
+67/87 Test: DiagMessageAckTest.SerializationWithoutPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.SerializationWithoutPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.SerializationWithoutPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.SerializationWithoutPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.SerializationWithoutPreviousMessage
+[       OK ] DiagMessageAckTest.SerializationWithoutPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.SerializationWithoutPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.SerializationWithoutPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/87 Testing: DiagMessageAckTest.SerializationCopyingPreviousMessage
+68/87 Test: DiagMessageAckTest.SerializationCopyingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.SerializationCopyingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.SerializationCopyingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.SerializationCopyingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.SerializationCopyingPreviousMessage
+[       OK ] DiagMessageAckTest.SerializationCopyingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.SerializationCopyingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.SerializationCopyingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/87 Testing: DiagMessageAckTest.SerializationMovingPreviousMessage
+69/87 Test: DiagMessageAckTest.SerializationMovingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.SerializationMovingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.SerializationMovingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.SerializationMovingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.SerializationMovingPreviousMessage
+[       OK ] DiagMessageAckTest.SerializationMovingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.SerializationMovingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.SerializationMovingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/87 Testing: DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage
+70/87 Test: DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage
+[       OK ] DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.ValidDeserializationWithoutPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/87 Testing: DiagMessageAckTest.ValidDeserializationUsingPreviousMessage
+71/87 Test: DiagMessageAckTest.ValidDeserializationUsingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.ValidDeserializationUsingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.ValidDeserializationUsingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.ValidDeserializationUsingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.ValidDeserializationUsingPreviousMessage
+[       OK ] DiagMessageAckTest.ValidDeserializationUsingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.ValidDeserializationUsingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.ValidDeserializationUsingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/87 Testing: DiagMessageAckTest.InvalidSizeDeserialization
+72/87 Test: DiagMessageAckTest.InvalidSizeDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.InvalidSizeDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.InvalidSizeDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.InvalidSizeDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.InvalidSizeDeserialization
+[       OK ] DiagMessageAckTest.InvalidSizeDeserialization (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.InvalidSizeDeserialization" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.InvalidSizeDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/87 Testing: DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage
+73/87 Test: DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage
+[       OK ] DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.InvalidDeserializationWithoutPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/87 Testing: DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage
+74/87 Test: DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageAckTest
+[ RUN      ] DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage
+[       OK ] DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageAckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageAckTest.InvalidDeserializationUsingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/87 Testing: DiagMessageNackTest.SerializationWithoutPreviousMessage
+75/87 Test: DiagMessageNackTest.SerializationWithoutPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.SerializationWithoutPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.SerializationWithoutPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.SerializationWithoutPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.SerializationWithoutPreviousMessage
+[       OK ] DiagMessageNackTest.SerializationWithoutPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.SerializationWithoutPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.SerializationWithoutPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/87 Testing: DiagMessageNackTest.SerializationCopyingPreviousMessage
+76/87 Test: DiagMessageNackTest.SerializationCopyingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.SerializationCopyingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.SerializationCopyingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.SerializationCopyingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.SerializationCopyingPreviousMessage
+[       OK ] DiagMessageNackTest.SerializationCopyingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.SerializationCopyingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.SerializationCopyingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/87 Testing: DiagMessageNackTest.SerializationMovingPreviousMessage
+77/87 Test: DiagMessageNackTest.SerializationMovingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.SerializationMovingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.SerializationMovingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.SerializationMovingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.SerializationMovingPreviousMessage
+[       OK ] DiagMessageNackTest.SerializationMovingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.SerializationMovingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.SerializationMovingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/87 Testing: DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage
+78/87 Test: DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage
+[       OK ] DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.ValidDeserializationWithoutPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/87 Testing: DiagMessageNackTest.ValidDeserializationUsingPreviousMessage
+79/87 Test: DiagMessageNackTest.ValidDeserializationUsingPreviousMessage
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.ValidDeserializationUsingPreviousMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.ValidDeserializationUsingPreviousMessage" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.ValidDeserializationUsingPreviousMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.ValidDeserializationUsingPreviousMessage
+[       OK ] DiagMessageNackTest.ValidDeserializationUsingPreviousMessage (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.ValidDeserializationUsingPreviousMessage" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.ValidDeserializationUsingPreviousMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/87 Testing: DiagMessageNackTest.InvalidDeserialization
+80/87 Test: DiagMessageNackTest.InvalidDeserialization
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DiagMessageNackTest.InvalidDeserialization" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DiagMessageNackTest.InvalidDeserialization" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DiagMessageNackTest.InvalidDeserialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagMessageNackTest
+[ RUN      ] DiagMessageNackTest.InvalidDeserialization
+[       OK ] DiagMessageNackTest.InvalidDeserialization (0 ms)
+[----------] 1 test from DiagMessageNackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DiagMessageNackTest.InvalidDeserialization" end time: Oct 23 08:14 UTC
+"DiagMessageNackTest.InvalidDeserialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/87 Testing: AnnouncementTimerTest.Constructor
+81/87 Test: AnnouncementTimerTest.Constructor
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AnnouncementTimerTest.Constructor" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AnnouncementTimerTest.Constructor" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AnnouncementTimerTest.Constructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AnnouncementTimerTest
+[ RUN      ] AnnouncementTimerTest.Constructor
+[       OK ] AnnouncementTimerTest.Constructor (0 ms)
+[----------] 1 test from AnnouncementTimerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AnnouncementTimerTest.Constructor" end time: Oct 23 08:14 UTC
+"AnnouncementTimerTest.Constructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/87 Testing: AnnouncementTimerTest.StartMethod
+82/87 Test: AnnouncementTimerTest.StartMethod
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=AnnouncementTimerTest.StartMethod" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"AnnouncementTimerTest.StartMethod" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AnnouncementTimerTest.StartMethod
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AnnouncementTimerTest
+[ RUN      ] AnnouncementTimerTest.StartMethod
+[       OK ] AnnouncementTimerTest.StartMethod (4000 ms)
+[----------] 1 test from AnnouncementTimerTest (4000 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4000 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   4.00 sec
+----------------------------------------------------------
+Test Passed.
+"AnnouncementTimerTest.StartMethod" end time: Oct 23 08:14 UTC
+"AnnouncementTimerTest.StartMethod" time elapsed: 00:00:04
+----------------------------------------------------------
+
+83/87 Testing: DoipControllerTest.ValidRequestHandling
+83/87 Test: DoipControllerTest.ValidRequestHandling
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DoipControllerTest.ValidRequestHandling" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DoipControllerTest.ValidRequestHandling" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DoipControllerTest.ValidRequestHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DoipControllerTest
+[ RUN      ] DoipControllerTest.ValidRequestHandling
+[       OK ] DoipControllerTest.ValidRequestHandling (0 ms)
+[----------] 1 test from DoipControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DoipControllerTest.ValidRequestHandling" end time: Oct 23 08:14 UTC
+"DoipControllerTest.ValidRequestHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/87 Testing: DoipControllerTest.InvalidLargeRequestHandling
+84/87 Test: DoipControllerTest.InvalidLargeRequestHandling
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DoipControllerTest.InvalidLargeRequestHandling" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DoipControllerTest.InvalidLargeRequestHandling" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DoipControllerTest.InvalidLargeRequestHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DoipControllerTest
+[ RUN      ] DoipControllerTest.InvalidLargeRequestHandling
+[       OK ] DoipControllerTest.InvalidLargeRequestHandling (0 ms)
+[----------] 1 test from DoipControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DoipControllerTest.InvalidLargeRequestHandling" end time: Oct 23 08:14 UTC
+"DoipControllerTest.InvalidLargeRequestHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/87 Testing: DoipControllerTest.InvalidTypeRequestHandling
+85/87 Test: DoipControllerTest.InvalidTypeRequestHandling
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DoipControllerTest.InvalidTypeRequestHandling" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DoipControllerTest.InvalidTypeRequestHandling" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DoipControllerTest.InvalidTypeRequestHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DoipControllerTest
+[ RUN      ] DoipControllerTest.InvalidTypeRequestHandling
+[       OK ] DoipControllerTest.InvalidTypeRequestHandling (0 ms)
+[----------] 1 test from DoipControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DoipControllerTest.InvalidTypeRequestHandling" end time: Oct 23 08:14 UTC
+"DoipControllerTest.InvalidTypeRequestHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/87 Testing: DoipControllerTest.InvalidLengthRequestHandling
+86/87 Test: DoipControllerTest.InvalidLengthRequestHandling
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DoipControllerTest.InvalidLengthRequestHandling" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DoipControllerTest.InvalidLengthRequestHandling" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DoipControllerTest.InvalidLengthRequestHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DoipControllerTest
+[ RUN      ] DoipControllerTest.InvalidLengthRequestHandling
+[       OK ] DoipControllerTest.InvalidLengthRequestHandling (0 ms)
+[----------] 1 test from DoipControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DoipControllerTest.InvalidLengthRequestHandling" end time: Oct 23 08:14 UTC
+"DoipControllerTest.InvalidLengthRequestHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/87 Testing: DoipControllerTest.EmptyRequestHandling
+87/87 Test: DoipControllerTest.EmptyRequestHandling
+Command: "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test" "--gtest_filter=DoipControllerTest.EmptyRequestHandling" "--gtest_also_run_disabled_tests"
+Directory: /home/runner/work/DoIP-Lib/DoIP-Lib/build
+"DoipControllerTest.EmptyRequestHandling" start time: Oct 23 08:14 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/runner/work/DoIP-Lib/DoIP-Lib/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DoipControllerTest.EmptyRequestHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DoipControllerTest
+[ RUN      ] DoipControllerTest.EmptyRequestHandling
+[       OK ] DoipControllerTest.EmptyRequestHandling (0 ms)
+[----------] 1 test from DoipControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DoipControllerTest.EmptyRequestHandling" end time: Oct 23 08:14 UTC
+"DoipControllerTest.EmptyRequestHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 23 08:14 UTC
