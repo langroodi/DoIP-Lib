@@ -32,31 +32,39 @@ namespace DoipLib
 
         if (request.size() <= mConfiguration.doipMaxRequestBytes)
         {
-            std::size_t _offset{cPayloadTypeOffset};
-            auto _payloadType{
-                Convert::ToEnum<PayloadType>(request, _offset)};
-
-            auto _messageHandlerItr{mHandlers.find(_payloadType)};
-            if (_messageHandlerItr != mHandlers.end())
+            if (request.size() > cPayloadTypeOffset)
             {
-                MessageHandler *_messageHandler{_messageHandlerItr->second};
-                Message *_message{_messageHandler->GetMessage()};
-                GenericNackType _nackCode;
-                bool _succeed{_message->TryDeserialize(request, _nackCode)};
+                std::size_t _offset{cPayloadTypeOffset};
+                auto _payloadType{
+                    Convert::ToEnum<PayloadType>(request, _offset)};
 
-                if (_succeed)
+                auto _messageHandlerItr{mHandlers.find(_payloadType)};
+                if (_messageHandlerItr != mHandlers.end())
                 {
-                    _result = _messageHandler->TryHandle(_message, response);
+                    MessageHandler *_messageHandler{_messageHandlerItr->second};
+                    Message *_message{_messageHandler->GetMessage()};
+                    GenericNackType _nackCode;
+                    bool _succeed{_message->TryDeserialize(request, _nackCode)};
+
+                    if (_succeed)
+                    {
+                        _result = _messageHandler->TryHandle(_message, response);
+                    }
+                    else
+                    {
+                        CreateGenericNack(_nackCode, response);
+                        _result = true;
+                    }
                 }
                 else
                 {
-                    CreateGenericNack(_nackCode, response);
+                    CreateGenericNack(GenericNackType::UnsupportedPayloadType, response);
                     _result = true;
                 }
             }
             else
             {
-                CreateGenericNack(GenericNackType::UnsupportedPayloadType, response);
+                CreateGenericNack(GenericNackType::InvalidPayloadLength, response);
                 _result = true;
             }
         }

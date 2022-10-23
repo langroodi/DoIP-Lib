@@ -146,4 +146,28 @@ namespace DoipLib
         EXPECT_TRUE(TryParseNackCode(_response, _actualResult));
         EXPECT_EQ(cExpectedResult, _actualResult);
     }
+
+    TEST_F(DoipControllerTest, EmptyRequestHandling)
+    {
+        const GenericNackType cExpectedResult{GenericNackType::InvalidPayloadLength};
+
+        const std::vector<uint8_t> cPayload;
+
+        ControllerConfig _config;
+        _config.doipMaxRequestBytes = static_cast<uint32_t>(cPayload.size());
+        _config.protocolVersion = cProtocolVersion;
+        _config.doIPInitialVehicleAnnouncementTime = cDelay;
+        _config.doIPVehicleAnnouncementInterval = cInterval;
+        _config.doIPVehicleAnnouncementCount = cCount;
+
+        DoipController _controller(std::move(_config));
+        RegisterHandler(_controller);
+
+        std::vector<uint8_t> _response;
+        EXPECT_TRUE(_controller.TryHandle(cPayload, _response));
+
+        GenericNackType _actualResult;
+        EXPECT_TRUE(TryParseNackCode(_response, _actualResult));
+        EXPECT_EQ(cExpectedResult, _actualResult);
+    }
 }
