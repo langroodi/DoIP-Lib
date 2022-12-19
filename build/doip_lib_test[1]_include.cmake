@@ -1,5 +1,0 @@
-if(EXISTS "/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test[1]_tests.cmake")
-  include("/home/runner/work/DoIP-Lib/DoIP-Lib/build/doip_lib_test[1]_tests.cmake")
-else()
-  add_test(doip_lib_test_NOT_BUILT doip_lib_test_NOT_BUILT)
-endif()
