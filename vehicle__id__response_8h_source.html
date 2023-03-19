@@ -134,69 +134,71 @@ $(document).ready(function(){initNavTree('vehicle__id__response_8h_source.html',
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a1e1710458037e1b15d1effd811e6e789">   30</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a1e1710458037e1b15d1effd811e6e789">GetPayload</a>(std::vector&lt;uint8_t&gt; &amp;payload) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#ab1bafd1a6d4ae17d9b4d671b8636c455">   32</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#ab1bafd1a6d4ae17d9b4d671b8636c455">TrySetPayload</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;payload) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>() noexcept;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a503f18773bf68644ac80bd1bcfbc0917">   45</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            uint8_t protocolVersion,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            const std::<span class="keywordtype">string</span> &amp;vin,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            uint16_t logicalAddress,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            uint8_t furtherAction);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a1a075977dc01f280825a2b5202637280">   61</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            uint8_t protocolVersion,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            std::<span class="keywordtype">string</span> &amp;&amp;vin,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            uint16_t logicalAddress,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            uint8_t furtherAction);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a3ea6a217b3f1e84b2d83df46a4f882d1">   78</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            uint8_t protocolVersion,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            const std::<span class="keywordtype">string</span> &amp;vin,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            uint16_t logicalAddress,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            uint8_t furtherAction,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            uint8_t vinGidStatus);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a739c87858c036550c57e7c6eb1fa0049">   96</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            uint8_t protocolVersion,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            std::<span class="keywordtype">string</span> &amp;&amp;vin,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            uint16_t logicalAddress,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            uint8_t furtherAction,</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            uint8_t vinGidStatus);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a877be820f745cb1804c48fe54f906aad">  107</a></span>        std::<span class="keywordtype">string</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a877be820f745cb1804c48fe54f906aad">GetVin</a>() const;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a898672f673ed3105d53d78ae2a85693d">  111</a></span>        uint16_t <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a898672f673ed3105d53d78ae2a85693d">GetLogicalAddress</a>() const noexcept;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a96bc483f15f8e2280fe27d5bf95804c7">  115</a></span>        std::array&lt;uint8_t, cIdSize&gt; <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a96bc483f15f8e2280fe27d5bf95804c7">GetEid</a>() const;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a658ddac65ab4bbcce395f6a40e86feb0">  119</a></span>        std::array&lt;uint8_t, cIdSize&gt; <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a658ddac65ab4bbcce395f6a40e86feb0">GetGid</a>() const;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#ab8b812e6cd991b1917b55c4ea32b8dcd">  123</a></span>        uint8_t <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#ab8b812e6cd991b1917b55c4ea32b8dcd">GetFurtherAction</a>() const noexcept;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a208c6fd97541b6d05b5b972421e56458">  128</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a208c6fd97541b6d05b5b972421e56458">TryGetVinGinStatus</a>(uint8_t &amp;vinGinStatus) const noexcept;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    };</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a6e548f8941de94539fe66f6898a2cdd3">   32</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a6e548f8941de94539fe66f6898a2cdd3">TrySetPayload</a>(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;payload,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            uint32_t payloadLength) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>() noexcept;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a503f18773bf68644ac80bd1bcfbc0917">   47</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            uint8_t protocolVersion,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            const std::<span class="keywordtype">string</span> &amp;vin,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            uint16_t logicalAddress,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            uint8_t furtherAction);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a1a075977dc01f280825a2b5202637280">   63</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            uint8_t protocolVersion,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            std::<span class="keywordtype">string</span> &amp;&amp;vin,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            uint16_t logicalAddress,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            uint8_t furtherAction);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a3ea6a217b3f1e84b2d83df46a4f882d1">   80</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            uint8_t protocolVersion,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            const std::<span class="keywordtype">string</span> &amp;vin,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            uint16_t logicalAddress,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            uint8_t furtherAction,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            uint8_t vinGidStatus);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a739c87858c036550c57e7c6eb1fa0049">   98</a></span>        <a class="code hl_class" href="classDoipLib_1_1VehicleIdResponse.html">VehicleIdResponse</a>(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            uint8_t protocolVersion,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            std::<span class="keywordtype">string</span> &amp;&amp;vin,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            uint16_t logicalAddress,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            std::array&lt;uint8_t, cIdSize&gt; eid,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            std::array&lt;uint8_t, cIdSize&gt; gid,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            uint8_t furtherAction,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            uint8_t vinGidStatus);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a877be820f745cb1804c48fe54f906aad">  109</a></span>        std::<span class="keywordtype">string</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a877be820f745cb1804c48fe54f906aad">GetVin</a>() const;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a898672f673ed3105d53d78ae2a85693d">  113</a></span>        uint16_t <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a898672f673ed3105d53d78ae2a85693d">GetLogicalAddress</a>() const noexcept;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a96bc483f15f8e2280fe27d5bf95804c7">  117</a></span>        std::array&lt;uint8_t, cIdSize&gt; <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a96bc483f15f8e2280fe27d5bf95804c7">GetEid</a>() const;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a658ddac65ab4bbcce395f6a40e86feb0">  121</a></span>        std::array&lt;uint8_t, cIdSize&gt; <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a658ddac65ab4bbcce395f6a40e86feb0">GetGid</a>() const;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#ab8b812e6cd991b1917b55c4ea32b8dcd">  125</a></span>        uint8_t <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#ab8b812e6cd991b1917b55c4ea32b8dcd">GetFurtherAction</a>() const noexcept;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classDoipLib_1_1VehicleIdResponse.html#a208c6fd97541b6d05b5b972421e56458">  130</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoipLib_1_1VehicleIdResponse.html#a208c6fd97541b6d05b5b972421e56458">TryGetVinGinStatus</a>(uint8_t &amp;vinGinStatus) const noexcept;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    };</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDoipLib_1_1Message_html"><div class="ttname"><a href="classDoipLib_1_1Message.html">DoipLib::Message</a></div><div class="ttdoc">DoIP generic message.</div><div class="ttdef"><b>Definition:</b> message.h:12</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html">DoipLib::VehicleIdResponse</a></div><div class="ttdoc">Vehicle announcement ID response message.</div><div class="ttdef"><b>Definition:</b> vehicle_id_response.h:12</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a1e1710458037e1b15d1effd811e6e789"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a1e1710458037e1b15d1effd811e6e789">DoipLib::VehicleIdResponse::GetPayload</a></div><div class="ttdeci">void GetPayload(std::vector&lt; uint8_t &gt; &amp;payload) const override</div><div class="ttdoc">Get message payload.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a208c6fd97541b6d05b5b972421e56458"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a208c6fd97541b6d05b5b972421e56458">DoipLib::VehicleIdResponse::TryGetVinGinStatus</a></div><div class="ttdeci">bool TryGetVinGinStatus(uint8_t &amp;vinGinStatus) const noexcept</div><div class="ttdoc">Try to get the VIN/GIN status.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a658ddac65ab4bbcce395f6a40e86feb0"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a658ddac65ab4bbcce395f6a40e86feb0">DoipLib::VehicleIdResponse::GetGid</a></div><div class="ttdeci">std::array&lt; uint8_t, cIdSize &gt; GetGid() const</div><div class="ttdoc">Get GID.</div></div>
+<div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a6e548f8941de94539fe66f6898a2cdd3"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a6e548f8941de94539fe66f6898a2cdd3">DoipLib::VehicleIdResponse::TrySetPayload</a></div><div class="ttdeci">virtual bool TrySetPayload(const std::vector&lt; uint8_t &gt; &amp;payload, uint32_t payloadLength) override</div><div class="ttdoc">Try to set message payload.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a877be820f745cb1804c48fe54f906aad"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a877be820f745cb1804c48fe54f906aad">DoipLib::VehicleIdResponse::GetVin</a></div><div class="ttdeci">std::string GetVin() const</div><div class="ttdoc">Get VIN.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a898672f673ed3105d53d78ae2a85693d"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a898672f673ed3105d53d78ae2a85693d">DoipLib::VehicleIdResponse::GetLogicalAddress</a></div><div class="ttdeci">uint16_t GetLogicalAddress() const noexcept</div><div class="ttdoc">Get logical address.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_a96bc483f15f8e2280fe27d5bf95804c7"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#a96bc483f15f8e2280fe27d5bf95804c7">DoipLib::VehicleIdResponse::GetEid</a></div><div class="ttdeci">std::array&lt; uint8_t, cIdSize &gt; GetEid() const</div><div class="ttdoc">Get EID.</div></div>
-<div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_ab1bafd1a6d4ae17d9b4d671b8636c455"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#ab1bafd1a6d4ae17d9b4d671b8636c455">DoipLib::VehicleIdResponse::TrySetPayload</a></div><div class="ttdeci">virtual bool TrySetPayload(const std::vector&lt; uint8_t &gt; &amp;payload) override</div><div class="ttdoc">Try to set message payload.</div></div>
 <div class="ttc" id="aclassDoipLib_1_1VehicleIdResponse_html_ab8b812e6cd991b1917b55c4ea32b8dcd"><div class="ttname"><a href="classDoipLib_1_1VehicleIdResponse.html#ab8b812e6cd991b1917b55c4ea32b8dcd">DoipLib::VehicleIdResponse::GetFurtherAction</a></div><div class="ttdeci">uint8_t GetFurtherAction() const noexcept</div><div class="ttdoc">Get further action.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

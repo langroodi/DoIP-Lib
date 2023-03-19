@@ -144,9 +144,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4decb1479ebc9ac3e29e8d39e7cc1c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1EidVehicleIdRequest.html#a4decb1479ebc9ac3e29e8d39e7cc1c89">GetPayload</a> (std::vector&lt; uint8_t &gt; &amp;payload) const override</td></tr>
 <tr class="memdesc:a4decb1479ebc9ac3e29e8d39e7cc1c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get message payload.  <a href="classDoipLib_1_1EidVehicleIdRequest.html#a4decb1479ebc9ac3e29e8d39e7cc1c89">More...</a><br /></td></tr>
 <tr class="separator:a4decb1479ebc9ac3e29e8d39e7cc1c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf8d38a9a1ad544f2a417f96a20affc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1EidVehicleIdRequest.html#abbf8d38a9a1ad544f2a417f96a20affc">TrySetPayload</a> (const std::vector&lt; uint8_t &gt; &amp;payload) override</td></tr>
-<tr class="memdesc:abbf8d38a9a1ad544f2a417f96a20affc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to set message payload.  <a href="classDoipLib_1_1EidVehicleIdRequest.html#abbf8d38a9a1ad544f2a417f96a20affc">More...</a><br /></td></tr>
-<tr class="separator:abbf8d38a9a1ad544f2a417f96a20affc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b1fdef291a90161b10f937960fcf24"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1EidVehicleIdRequest.html#a67b1fdef291a90161b10f937960fcf24">TrySetPayload</a> (const std::vector&lt; uint8_t &gt; &amp;payload, uint32_t payloadLength) override</td></tr>
+<tr class="memdesc:a67b1fdef291a90161b10f937960fcf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to set message payload.  <a href="classDoipLib_1_1EidVehicleIdRequest.html#a67b1fdef291a90161b10f937960fcf24">More...</a><br /></td></tr>
+<tr class="separator:a67b1fdef291a90161b10f937960fcf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classDoipLib_1_1Message"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDoipLib_1_1Message')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classDoipLib_1_1Message.html">DoipLib::Message</a></td></tr>
 <tr class="memitem:a1a726e407f06f1dfe850866371d3f5b1 inherit pro_methods_classDoipLib_1_1Message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoipLib_1_1Message.html#a1a726e407f06f1dfe850866371d3f5b1">Message</a> (PayloadType payloadType) noexcept</td></tr>
 <tr class="memdesc:a1a726e407f06f1dfe850866371d3f5b1 inherit pro_methods_classDoipLib_1_1Message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classDoipLib_1_1Message.html#a1a726e407f06f1dfe850866371d3f5b1">More...</a><br /></td></tr>
@@ -264,8 +264,8 @@ static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c
 
 </div>
 </div>
-<a id="abbf8d38a9a1ad544f2a417f96a20affc" name="abbf8d38a9a1ad544f2a417f96a20affc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbf8d38a9a1ad544f2a417f96a20affc">&#9670;&nbsp;</a></span>TrySetPayload()</h2>
+<a id="a67b1fdef291a90161b10f937960fcf24" name="a67b1fdef291a90161b10f937960fcf24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b1fdef291a90161b10f937960fcf24">&#9670;&nbsp;</a></span>TrySetPayload()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,8 +277,18 @@ static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c
           <td class="memname">virtual bool DoipLib::EidVehicleIdRequest::TrySetPayload </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payloadLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -292,12 +302,13 @@ static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>Payload byte array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payloadLength</td><td>Payload length from the message header </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the payload is set successfully, otherwise false </dd></dl>
 
-<p>Implements <a class="el" href="classDoipLib_1_1Message.html#a878d4ab44afedb6b60e5e06baeefe7a3">DoipLib::Message</a>.</p>
+<p>Implements <a class="el" href="classDoipLib_1_1Message.html#affc832e6ddb8f70805a4b901ee0d3366">DoipLib::Message</a>.</p>
 
 </div>
 </div>

@@ -7,5 +7,5 @@ var classDoipLib_1_1EntityStatusResponse =
     [ "GetMaxOpenSockets", "classDoipLib_1_1EntityStatusResponse.html#ad107eeaf137af065c3096a2d92351793", null ],
     [ "GetPayload", "classDoipLib_1_1EntityStatusResponse.html#a55142f44e7e14425df5506fa52507312", null ],
     [ "TryGetMaxDataSize", "classDoipLib_1_1EntityStatusResponse.html#a5aab0658ac48a0d6958c03cb2c7e6e9f", null ],
-    [ "TrySetPayload", "classDoipLib_1_1EntityStatusResponse.html#ac85ce635f517fb191b5332034b11436c", null ]
+    [ "TrySetPayload", "classDoipLib_1_1EntityStatusResponse.html#a2c4ece6b38bda67e9a634be155ab3677", null ]
 ];

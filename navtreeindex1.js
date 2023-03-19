@@ -1,6 +1,6 @@
 var NAVTREEINDEX1 =
 {
-"classDoipLib_1_1VinVehicleIdRequest.html#afe5a20e0a3a2b9c960754b43a1aea632":[1,0,0,20,4],
+"classDoipLib_1_1VinVehicleIdRequest.html#ad0fe297283f745ef901b0db2b3f9ab79":[1,0,0,20,2],
 "classDoipLib_1_1VinVehicleIdRequest.html#afe6ddbc976fda04672b48cc2ced80df8":[0,0,0,21,3],
 "classDoipLib_1_1VinVehicleIdRequest.html#afe6ddbc976fda04672b48cc2ced80df8":[1,0,0,20,3],
 "classes.html":[1,1],
