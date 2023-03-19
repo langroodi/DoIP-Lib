@@ -55,7 +55,7 @@ namespace DoipLib
 
         /// @brief Get user data
         /// @param[out] userData Actual diagnostic payload data (e.g., UDS message payload)
-        void GetUserData(std::vector<uint8_t> &userData);
+        void GetUserData(std::vector<uint8_t> &userData) const;
     };
 }
 

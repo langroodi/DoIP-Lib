@@ -72,7 +72,7 @@ namespace DoipLib
         return mTargetAddress;
     }
 
-    void DiagMessage::GetUserData(std::vector<uint8_t> &userData)
+    void DiagMessage::GetUserData(std::vector<uint8_t> &userData) const
     {
         userData = mUserData;
     }
