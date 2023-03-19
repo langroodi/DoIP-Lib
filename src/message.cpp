@@ -73,13 +73,13 @@ namespace DoipLib
             Convert::ToUnsignedInteger<uint32_t>(serializedMessage, _offset)};
 
         // Payload length check
-        if (_payloadLength != serializedMessage.size() - cHeaderSize)
+        if (_payloadLength > serializedMessage.size() - cHeaderSize)
         {
             nackCode = GenericNackType::InvalidPayloadLength;
             return false;
         }
 
-        bool _succeed{TrySetPayload(serializedMessage)};
+        bool _succeed{TrySetPayload(serializedMessage, _payloadLength)};
         if (_succeed)
         {
             mProtocolVersion = _actualProtocolVersion;

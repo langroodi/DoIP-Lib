@@ -67,7 +67,9 @@ namespace DoipLib
         mResponseCode =Convert::ToEnum<RoutingActivationResponseType>(payload, _offset);
     }
 
-    bool RoutingActivationResponse::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool RoutingActivationResponse::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSizeMin{
             static_cast<std::size_t>(cHeaderSize + 9)};

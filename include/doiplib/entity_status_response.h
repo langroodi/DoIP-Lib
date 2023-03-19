@@ -32,7 +32,9 @@ namespace DoipLib
     protected:
         void GetPayload(std::vector<uint8_t> &payload) const override;
 
-        virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override;
+        virtual bool TrySetPayload(
+            const std::vector<uint8_t> &payload,
+            uint32_t payloadLength) override;
 
     public:
         EntityStatusResponse() noexcept;

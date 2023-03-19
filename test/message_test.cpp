@@ -17,7 +17,9 @@ namespace DoipLib
         {
         }
 
-        virtual bool TrySetPayload(const std::vector<uint8_t> &payload) override
+        virtual bool TrySetPayload(
+            const std::vector<uint8_t> &payload,
+            uint32_t payloadLength) override
         {
             return true;
         }
@@ -55,6 +57,16 @@ namespace DoipLib
 
         GenericNackType _nackCode;
         bool _succeed{TryDeserialize(cSerializedMessage, _nackCode)};
+        EXPECT_TRUE(_succeed);
+    }
+
+    TEST_F(MessageTest, ValidLongMessageDeserialization)
+    {
+        const std::vector<uint8_t> cLongerSerializedMessage{
+            0x02, 0xfd, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0xff};
+
+        GenericNackType _nackCode;
+        bool _succeed{TryDeserialize(cLongerSerializedMessage, _nackCode)};
         EXPECT_TRUE(_succeed);
     }
 

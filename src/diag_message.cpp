@@ -39,20 +39,27 @@ namespace DoipLib
         Convert::ToByteVector<uint16_t>(mSourceAddress, payload);
     }
 
-    bool DiagMessage::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool DiagMessage::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
-        std::size_t _offset{cHeaderSize};
-
         if (payload.size() > cHeaderSize)
         {
+            const auto cPayloadSize{static_cast<std::size_t>(payloadLength)};
+            const std::size_t cAddressesSize{sizeof(uint16_t) + sizeof(uint16_t)};
+
+            std::size_t _offset{cHeaderSize};
+
             mSourceAddress =
                 Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
 
             mTargetAddress =
                 Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
 
-            auto _beginItr{payload.cbegin() + _offset};
-            mUserData = std::vector<uint8_t>(_beginItr, payload.cend());
+            const auto cBeginItr{payload.cbegin() + _offset};
+            // [Header: 8 bytes]<cBeginItr>[AddressesSize: 4 bytes][UserData: var bytes]
+            const auto cEndItr{cBeginItr + (cPayloadSize - cAddressesSize)};
+            mUserData = std::vector<uint8_t>(cBeginItr, cEndItr);
 
             return true;
         }

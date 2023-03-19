@@ -21,7 +21,9 @@ namespace DoipLib
         Convert::ToByteVector<uint16_t>(mSourceAddress, payload);
     }
 
-    bool AliveCheckResponse::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool AliveCheckResponse::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSize{cHeaderSize + 2};
         std::size_t _offset{cHeaderSize};

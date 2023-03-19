@@ -22,7 +22,9 @@ namespace DoipLib
         payload.insert(payload.begin(), _powerModeByte);
     }
 
-    bool PowerModeResponse::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool PowerModeResponse::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSize{cHeaderSize + 1};
         std::size_t _offset{cHeaderSize};

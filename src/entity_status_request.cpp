@@ -19,7 +19,9 @@ namespace DoipLib
         // The message contain no payload.
     }
 
-    bool EntityStatusRequest::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool EntityStatusRequest::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         // The message contain no payload.
         return payload.size() == cHeaderSize;

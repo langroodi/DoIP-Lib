@@ -75,10 +75,13 @@ namespace DoipLib
         mNackCode = Convert::ToEnum<DiagNackType>(payload, _offset);
     }
 
-    bool DiagMessageNack::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool DiagMessageNack::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
+        const std::size_t cCompulsoryPayloadSize{5};
         const std::size_t cExpectedSizeMin{
-            static_cast<std::size_t>(cHeaderSize + 5)};
+            static_cast<std::size_t>(cHeaderSize + cCompulsoryPayloadSize)};
 
         if (payload.size() == cExpectedSizeMin)
         {
@@ -90,11 +93,16 @@ namespace DoipLib
         }
         else if (payload.size() > cExpectedSizeMin)
         {
+            const auto cPayloadSize{static_cast<std::size_t>(payloadLength)};
+            
             SetCompulsoryPayload(payload);
             // Has revious message payload
             mHasPreviousMessage = true;
-            auto _beginItr{payload.cbegin() + cExpectedSizeMin};
-            mPreviousMessage = std::vector<uint8_t>(_beginItr, payload.cend());
+            const auto cBeginItr{payload.cbegin() + cExpectedSizeMin};
+            // [Header: 8 bytes]<cBeginItr>[CompulsoryPayload: 5 bytes][PreviousMessage: var bytes]
+            const auto cEndItr{
+                cBeginItr + (cPayloadSize - cCompulsoryPayloadSize)};
+            mPreviousMessage = std::vector<uint8_t>(cBeginItr, cEndItr);
 
             return true;
         }

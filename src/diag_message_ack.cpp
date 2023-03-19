@@ -83,10 +83,13 @@ namespace DoipLib
         }
     }
 
-    bool DiagMessageAck::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool DiagMessageAck::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
+        const std::size_t cCompulsoryPayloadSize{5};
         const std::size_t cExpectedSizeMin{
-            static_cast<std::size_t>(cHeaderSize + 5)};
+            static_cast<std::size_t>(cHeaderSize + cCompulsoryPayloadSize)};
 
         if (payload.size() == cExpectedSizeMin)
         {
@@ -104,10 +107,14 @@ namespace DoipLib
             bool _succeed{TrySetCompulsoryPayload(payload)};
             if (_succeed)
             {
+                const auto cPayloadSize{static_cast<std::size_t>(payloadLength)};
                 // Has revious message payload
                 mHasPreviousMessage = true;
-                auto _beginItr{payload.cbegin() + cExpectedSizeMin};
-                mPreviousMessage = std::vector<uint8_t>(_beginItr, payload.cend());
+                const auto cBeginItr{payload.cbegin() + cExpectedSizeMin};
+                // [Header: 8 bytes]<cBeginItr>[CompulsoryPayload: 5 bytes][PreviousMessage: var bytes]
+                const auto cEndItr{
+                    cBeginItr + (cPayloadSize - cCompulsoryPayloadSize)};
+                mPreviousMessage = std::vector<uint8_t>(cBeginItr, cEndItr);
             }
 
             return _succeed;

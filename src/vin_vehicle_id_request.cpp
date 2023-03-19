@@ -29,7 +29,9 @@ namespace DoipLib
         payload = std::vector<uint8_t>(mVin.cbegin(), mVin.cend());
     }
 
-    bool VinVehicleIdRequest::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool VinVehicleIdRequest::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSize{
             static_cast<std::size_t>(cHeaderSize + cVinSize)};

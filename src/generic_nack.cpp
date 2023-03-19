@@ -22,7 +22,9 @@ namespace DoipLib
         payload.insert(payload.begin(), _nackCodeByte);
     }
 
-    bool GenericNack::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool GenericNack::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSize{cHeaderSize + sizeof(GenericNackType)};
         std::size_t _offset{cHeaderSize};

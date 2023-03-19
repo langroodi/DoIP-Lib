@@ -76,7 +76,9 @@ namespace DoipLib
         }
     }
 
-    bool RoutingActivationRequest::TrySetPayload(const std::vector<uint8_t> &payload)
+    bool RoutingActivationRequest::TrySetPayload(
+        const std::vector<uint8_t> &payload,
+        uint32_t payloadLength)
     {
         const std::size_t cExpectedSizeMin{
             static_cast<std::size_t>(cHeaderSize + 7)};
