@@ -16,14 +16,15 @@ namespace DoipLib
 
     void PowerModeRequest::GetPayload(std::vector<uint8_t> &payload) const
     {
-        // The message contain no payload.
+        // The message contains empty payload.
+        payload.clear();
     }
 
     bool PowerModeRequest::TrySetPayload(
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        // The message contain no payload.
-        return payload.size() == cHeaderSize;
+        // The message contains no payload.
+        return payloadLength == 0;
     }
 }
