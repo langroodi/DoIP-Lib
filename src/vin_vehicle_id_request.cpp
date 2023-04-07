@@ -33,10 +33,7 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSize{
-            static_cast<std::size_t>(cHeaderSize + cVinSize)};
-
-        if (payload.size() == cExpectedSize)
+        if (payloadLength == cVinSize)
         {
             std::size_t _offset{cHeaderSize};
             mVin = Convert::ToString<cVinSize>(payload, _offset);

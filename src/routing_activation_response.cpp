@@ -64,20 +64,17 @@ namespace DoipLib
 
         mTesterLogicalAddress = Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
         mEntityLogicalAddress = Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
-        mResponseCode =Convert::ToEnum<RoutingActivationResponseType>(payload, _offset);
+        mResponseCode = Convert::ToEnum<RoutingActivationResponseType>(payload, _offset);
     }
 
     bool RoutingActivationResponse::TrySetPayload(
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSizeMin{
-            static_cast<std::size_t>(cHeaderSize + 9)};
-        const std::size_t cExpectedSizeMax{
-            static_cast<std::size_t>(cHeaderSize + 13)};
-        std::size_t _offset{cExpectedSizeMin};
+        const std::size_t cExpectedPayloadSizeMin{9};
+        const std::size_t cExpectedPayloadSizeMax{13};
 
-        if (payload.size() == cExpectedSizeMin)
+        if (payloadLength == cExpectedPayloadSizeMin)
         {
             SetPayload(payload);
             // No OEM-specific data
@@ -85,11 +82,13 @@ namespace DoipLib
 
             return true;
         }
-        else if (payload.size() == cExpectedSizeMax)
+        else if (payloadLength == cExpectedPayloadSizeMax)
         {
             SetPayload(payload);
             // Has OEM-speific data
             mHasOemSpecificData = true;
+            std::size_t _offset{
+                static_cast<std::size_t>(cHeaderSize + cExpectedPayloadSizeMin)};
             mOemSpecificData =
                 Convert::ToUnsignedInteger<uint32_t>(payload, _offset);
 

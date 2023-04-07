@@ -12,7 +12,7 @@ namespace DoipLib
     GenericNack::GenericNack(
         uint8_t protocolVersion,
         GenericNackType nackCode) noexcept : Message(protocolVersion, cPayloadType),
-                                      mNackCode{nackCode}
+                                             mNackCode{nackCode}
     {
     }
 
@@ -26,11 +26,11 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSize{cHeaderSize + sizeof(GenericNackType)};
-        std::size_t _offset{cHeaderSize};
+        const std::size_t cExpectedPayloadSize{sizeof(GenericNackType)};
 
-        if (payload.size() == cExpectedSize)
+        if (payloadLength == cExpectedPayloadSize)
         {
+            std::size_t _offset{cHeaderSize};
             mNackCode = Convert::ToEnum<GenericNackType>(payload, _offset);
             return true;
         }

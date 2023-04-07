@@ -25,11 +25,11 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSize{cHeaderSize + 2};
-        std::size_t _offset{cHeaderSize};
+        const size_t cExpectedPayloadSize{sizeof(uint16_t)};
 
-        if (payload.size() == cExpectedSize)
+        if (payloadLength == cExpectedPayloadSize)
         {
+            std::size_t _offset{cHeaderSize};
             mSourceAddress =
                 Convert::ToUnsignedInteger<uint16_t>(payload, _offset);
 

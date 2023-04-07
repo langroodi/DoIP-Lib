@@ -110,13 +110,10 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSizeMin{
-            static_cast<std::size_t>(cHeaderSize + 32)};
-        const std::size_t cExpectedSizeMax{
-            static_cast<std::size_t>(cHeaderSize + 33)};
-        const std::size_t cVinGidStatusIndex{cExpectedSizeMin};
+        const std::size_t cExpectedPayloadSizeMin{32};
+        const std::size_t cExpectedPayloadSizeMax{33};
 
-        if (payload.size() == cExpectedSizeMin)
+        if (payloadLength == cExpectedPayloadSizeMin)
         {
             SetPayload(payload);
             // No vehicle ID synchronization
@@ -124,8 +121,11 @@ namespace DoipLib
 
             return true;
         }
-        else if (payload.size() == cExpectedSizeMax)
+        else if (payloadLength == cExpectedPayloadSizeMax)
         {
+            const std::size_t cVinGidStatusIndex{
+                static_cast<std::size_t>(cHeaderSize + cExpectedPayloadSizeMin)};
+
             SetPayload(payload);
             // Use vehicle ID synchronization
             mUseVehicleIdSync = true;

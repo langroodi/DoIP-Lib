@@ -26,10 +26,7 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSize{
-            static_cast<std::size_t>(cHeaderSize + cEidSize)};
-
-        if (payload.size() == cExpectedSize)
+        if (payloadLength == cEidSize)
         {
             std::size_t _offset{cHeaderSize};
             mEid = Convert::ToByteArray<cEidSize>(payload, _offset);

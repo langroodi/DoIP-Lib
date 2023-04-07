@@ -26,11 +26,11 @@ namespace DoipLib
         const std::vector<uint8_t> &payload,
         uint32_t payloadLength)
     {
-        const std::size_t cExpectedSize{cHeaderSize + 1};
-        std::size_t _offset{cHeaderSize};
+        const std::size_t cExpectedPayloadSize{sizeof(PowerModeType)};
 
-        if (payload.size() == cExpectedSize)
+        if (payloadLength == cExpectedPayloadSize)
         {
+            std::size_t _offset{cHeaderSize};
             mPowerMode = Convert::ToEnum<PowerModeType>(payload, _offset);
             return true;
         }
