@@ -118,6 +118,7 @@ if(build_samples)
   add_executable(
     doip_lib_sample
     ${sample_dir}/vehicle_id_message_handler.cpp
+    ${sample_dir}/routing_activation_handler.cpp
     ${sample_dir}/message_handling_sample.cpp
   )
 
